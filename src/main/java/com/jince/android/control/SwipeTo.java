@@ -27,8 +27,6 @@ public class SwipeTo {
 	public void Left(AndroidDriver driver,int during){
 		int windth = driver.manage().window().getSize().width;
 		int height = driver.manage().window().getSize().height;
-		System.out.println(windth);
-		System.out.println(height);
 		try{
 			driver.swipe(windth*3/4, height/2, windth/4, height/2, during);
 		}catch(Exception e){
