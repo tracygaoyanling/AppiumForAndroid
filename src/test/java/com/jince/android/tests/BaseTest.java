@@ -2,9 +2,7 @@ package com.jince.android.tests;
 import io.appium.java_client.android.AndroidDriver;
 
 import java.io.File;
-import java.net.URL;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
