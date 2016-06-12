@@ -1,6 +1,5 @@
 package com.jince.android.tests;
 import io.appium.java_client.android.AndroidDriver;
-
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -16,9 +15,12 @@ import org.testng.annotations.BeforeTest;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import com.jince.android.config.UIConfig;
+import com.jince.android.utility.ConPrint;
 import com.jince.android.config.ConfigSetUp;
-import com.jince.android.util.ConPrint;
+
 public abstract class BaseTest {
+	
+	@SuppressWarnings("rawtypes")
 	public static AndroidDriver driver;
 	private ITestContext context;
 	public String configFile;

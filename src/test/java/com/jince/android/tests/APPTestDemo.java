@@ -4,12 +4,11 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
-
-import com.jince.android.config.UIConfig;
 import com.jince.android.control.SwipeTo;
 import com.jince.android.pages.MinePage;
-//import com.jince.android.tests.BaseTest;
+
 public class APPTestDemo extends BaseTest{
+	
 	MinePage minePage;
 	public void beforeClass(ITestContext context){
     	minePage = new MinePage(driver);

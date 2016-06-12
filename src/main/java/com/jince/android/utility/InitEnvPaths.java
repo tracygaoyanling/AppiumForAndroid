@@ -3,7 +3,6 @@ package com.jince.android.utility;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import com.jince.android.util.ConPrint;
 public class InitEnvPaths {
 	
 //	public static void main(String[] args){

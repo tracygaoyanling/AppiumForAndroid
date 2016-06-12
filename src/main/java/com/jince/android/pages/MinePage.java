@@ -13,6 +13,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import junit.framework.Assert;
 public class MinePage extends BasePage {
+	
 	LoginPage loginPage = new LoginPage(driver);
 	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/customer_actionbar_title")
 	public WebElement title;

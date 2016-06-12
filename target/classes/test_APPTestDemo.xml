@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="JinDaShi Android Test" parallel="tests" thread-count="1">
+<suite name="JinDaShi Android Test">
 	<test name="Full Test - WWW">
 		<classes>
 			<class name="com.jince.android.tests.APPTestDemo" />

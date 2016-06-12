@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.Properties;
-import com.jince.android.util.ConPrint;
+
 import com.jince.android.config.UIConfig;
 public class ConfigUtils {
 //	public static void main(String[] args){

@@ -1,4 +1,4 @@
-package com.jince.android.util;
+package com.jince.android.utility;
 
 import org.testng.Assert;
 import org.openqa.selenium.WebDriver;

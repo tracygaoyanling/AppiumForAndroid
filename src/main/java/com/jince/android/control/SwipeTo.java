@@ -1,5 +1,6 @@
 package com.jince.android.control;
 import io.appium.java_client.android.AndroidDriver;
+
 public class SwipeTo {
 	
 	public void Up(AndroidDriver driver,int during){
