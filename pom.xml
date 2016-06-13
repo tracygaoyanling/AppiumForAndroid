@@ -96,6 +96,9 @@
 	      <plugin>
 	        <artifactId>maven-surefire-plugin</artifactId>
 	        <version>2.12</version>
+	        <configuration>
+	        	<suiteXmlFiles>src/test/resource/${suiteFile}</suiteXmlFiles>
+	        </configuration>
 	      </plugin>
 	  </plugins>
 	  <sourceDirectory>src/main/java</sourceDirectory>
