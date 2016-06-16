@@ -2,65 +2,65 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="53672" started-at="2016-06-12T09:48:10Z" finished-at="2016-06-12T09:49:03Z">
+  <suite name="Default suite" duration-ms="80993" started-at="2016-06-16T07:40:13Z" finished-at="2016-06-16T07:41:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="53672" started-at="2016-06-12T09:48:10Z" finished-at="2016-06-12T09:49:03Z">
+    <test name="Default test" duration-ms="80993" started-at="2016-06-16T07:40:13Z" finished-at="2016-06-16T07:41:34Z">
       <class name="com.jince.android.tests.APPTestDemo">
-        <test-method status="PASS" signature="suiteSetup()[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="suiteSetup" is-config="true" duration-ms="6" started-at="2016-06-12T17:48:10Z" finished-at="2016-06-12T17:48:10Z">
+        <test-method status="PASS" signature="suiteSetup()[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="suiteSetup" is-config="true" duration-ms="14" started-at="2016-06-16T15:40:13Z" finished-at="2016-06-16T15:40:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteSetup -->
-        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="setUpDriver" is-config="true" duration-ms="18512" started-at="2016-06-12T17:48:10Z" finished-at="2016-06-12T17:48:28Z">
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="setUpDriver" is-config="true" duration-ms="43981" started-at="2016-06-16T15:40:13Z" finished-at="2016-06-16T15:40:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6aa8e115]]>
+                <![CDATA[org.testng.TestRunner@72ef8d15]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method status="PASS" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="setUp" is-config="true" duration-ms="138" started-at="2016-06-12T17:48:28Z" finished-at="2016-06-12T17:48:28Z">
+        <test-method status="PASS" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="setUp" is-config="true" duration-ms="211" started-at="2016-06-16T15:40:57Z" finished-at="2016-06-16T15:40:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6aa8e115]]>
+                <![CDATA[org.testng.TestRunner@72ef8d15]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="open_Url" is-config="true" duration-ms="1" started-at="2016-06-12T17:48:28Z" finished-at="2016-06-12T17:48:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="Login" duration-ms="33807" started-at="2016-06-12T17:48:28Z" finished-at="2016-06-12T17:49:02Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="Login" duration-ms="34589" started-at="2016-06-16T15:40:57Z" finished-at="2016-06-16T15:41:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-12T17:49:02Z" finished-at="2016-06-12T17:49:02Z">
+        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-16T15:40:57Z" finished-at="2016-06-16T15:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_Url -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-16T15:41:32Z" finished-at="2016-06-16T15:41:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="1" started-at="2016-06-12T17:49:02Z" finished-at="2016-06-12T17:49:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-06-16T15:41:32Z" finished-at="2016-06-16T15:41:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endTest(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="endTest" is-config="true" duration-ms="1193" started-at="2016-06-12T17:49:02Z" finished-at="2016-06-12T17:49:03Z">
+        <test-method status="PASS" signature="endTest(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="endTest" is-config="true" duration-ms="2174" started-at="2016-06-16T15:41:32Z" finished-at="2016-06-16T15:41:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6aa8e115]]>
+                <![CDATA[org.testng.TestRunner@72ef8d15]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="endSuite()[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="endSuite" is-config="true" duration-ms="0" started-at="2016-06-12T17:49:03Z" finished-at="2016-06-12T17:49:03Z">
+        <test-method status="PASS" signature="endSuite()[pri:0, instance:com.jince.android.tests.APPTestDemo@6f7fd0e6]" name="endSuite" is-config="true" duration-ms="0" started-at="2016-06-16T15:41:34Z" finished-at="2016-06-16T15:41:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSuite -->

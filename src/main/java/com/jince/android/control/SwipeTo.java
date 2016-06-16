@@ -1,9 +1,12 @@
 package com.jince.android.control;
+
+import org.openqa.selenium.WebElement;
+
 import io.appium.java_client.android.AndroidDriver;
 
 public class SwipeTo {
 	
-	public void Up(AndroidDriver driver,int during){
+	public void Up(AndroidDriver<WebElement> driver,int during){
 		int windth = driver.manage().window().getSize().width;
 		int height = driver.manage().window().getSize().height;
 		try{
@@ -15,7 +18,7 @@ public class SwipeTo {
 		
 	}
 	
-	public void Down(AndroidDriver driver,int during){
+	public void Down(AndroidDriver<WebElement> driver,int during){
 		int windth = driver.manage().window().getSize().width;
 		int height = driver.manage().window().getSize().height;
 		try{
@@ -25,7 +28,7 @@ public class SwipeTo {
 		}
 	}
 	
-	public void Left(AndroidDriver driver,int during){
+	public void Left(AndroidDriver<WebElement> driver,int during){
 		int windth = driver.manage().window().getSize().width;
 		int height = driver.manage().window().getSize().height;
 		try{
@@ -35,7 +38,7 @@ public class SwipeTo {
 		}	
 	}
 	
-	public void Right(AndroidDriver driver,int during){
+	public void Right(AndroidDriver<WebElement> driver,int during){
 		int windth = driver.manage().window().getSize().width;
 		int height = driver.manage().window().getSize().height;
 		try{

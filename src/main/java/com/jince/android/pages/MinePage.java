@@ -1,17 +1,13 @@
 package com.jince.android.pages;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 //using Android UI selectors, accessibility, id, name, class name, tag and xpath to findElement
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-
 import com.jince.android.config.UIConfig;
-
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import junit.framework.Assert;
 public class MinePage extends BasePage {
 	
 	LoginPage loginPage = new LoginPage(driver);

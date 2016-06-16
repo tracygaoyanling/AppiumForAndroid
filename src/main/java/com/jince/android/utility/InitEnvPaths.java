@@ -3,16 +3,11 @@ package com.jince.android.utility;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 public class InitEnvPaths {
-	
-//	public static void main(String[] args){
-//		String[] result = FindEnvPaths();
-//		for(int i=0;i<result.length;i++){
-//			ConPrint.info(result[i]);
-//		}
-//	}
+
 	public static String[] FindEnvPaths(){
-		Map map = System.getenv();  
+		Map<String, String> map = System.getenv();  
 		String path = (String) map.get("Path");
 		String[] paths = path.split(";");
 		String[] nodeAppiumPaths = new String[2];

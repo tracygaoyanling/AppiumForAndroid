@@ -2,6 +2,8 @@ package com.jince.android.tests;
 import io.appium.java_client.android.AndroidDriver;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
@@ -20,8 +22,7 @@ import com.jince.android.config.ConfigSetUp;
 
 public abstract class BaseTest {
 	
-	@SuppressWarnings("rawtypes")
-	public static AndroidDriver driver;
+	public static AndroidDriver<WebElement> driver;
 	private ITestContext context;
 	public String configFile;
 	public AppiumDriverLocalService service = null;
@@ -34,7 +35,6 @@ public abstract class BaseTest {
 		
 	}
 	
-	@SuppressWarnings("rawtypes")
 	@BeforeTest
 	public void setUpDriver(ITestContext context){
 		ConPrint.testName(context.getCurrentXmlTest().getName());
@@ -47,6 +47,8 @@ public abstract class BaseTest {
 				System.setProperty(AppiumServiceBuilder.NODE_PATH ,UIConfig.EnvPaths[0]);
 				System.setProperty(AppiumServiceBuilder.APPIUM_PATH ,UIConfig.EnvPaths[1]);
 			}
+			System.setProperty(AppiumServiceBuilder.NODE_PATH ,UIConfig.nodePath);
+			System.setProperty(AppiumServiceBuilder.APPIUM_PATH ,UIConfig.appiumPath);
 			service = AppiumDriverLocalService.buildDefaultService();
 			service.start();
 	        if (service == null || !service.isRunning()) {
@@ -64,7 +66,7 @@ public abstract class BaseTest {
 	        capabilities.setCapability("app", app.getAbsolutePath());
 	        capabilities.setCapability("appPackage", UIConfig.appPackage);
 	        capabilities.setCapability("appActivity", UIConfig.appActivity);
-	        driver = new AndroidDriver(service.getUrl(),capabilities);
+	        driver = new AndroidDriver<WebElement>(service.getUrl(),capabilities);
 	        Thread.sleep(6000);
 	        driver.manage().timeouts().implicitlyWait(UIConfig.PageLoadTimeOut, TimeUnit.SECONDS); 
 			context.setAttribute("CONTEXT_KEY_DRIVER", driver);

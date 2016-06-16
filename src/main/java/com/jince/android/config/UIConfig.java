@@ -1,4 +1,5 @@
 package com.jince.android.config;
+
 import com.jince.android.utility.ConfigUtils;
 import com.jince.android.utility.InitEnvPaths;
 import com.jince.android.config.ConfigSetUp;

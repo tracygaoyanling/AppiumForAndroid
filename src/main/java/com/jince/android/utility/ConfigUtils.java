@@ -6,11 +6,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.Properties;
 
-import com.jince.android.config.UIConfig;
 public class ConfigUtils {
-//	public static void main(String[] args){
-//		autowireConfig(UIConfig.class,"mainConfig.properties");
-//	}
 	public static Properties getProperties(@SuppressWarnings("rawtypes") Class clazz,String filename){
 		InputStream in =null;
 		try{
@@ -35,7 +31,6 @@ public class ConfigUtils {
 	@SuppressWarnings("rawtypes")
 	public static void autowireConfig(Class clazz,String file){
 		Properties pros = getProperties(clazz,file);
-		System.out.println("Pros " +pros);
 		if(pros == null){
 			return;
 		}

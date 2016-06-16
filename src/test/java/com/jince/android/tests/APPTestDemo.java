@@ -13,7 +13,8 @@ public class APPTestDemo extends BaseTest{
 	public void beforeClass(ITestContext context){
     	minePage = new MinePage(driver);
 	}
-    @Test
+    @SuppressWarnings("unchecked")
+	@Test
     public void Login() throws InterruptedException{
     	SwipeTo swipeTo = new SwipeTo();
     	swipeTo.Left(driver, 0);
