@@ -3,14 +3,19 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.jince.android.tests.APPTestDemo">
+      <class name="com.jince.android.tests.LoginPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="afterTestCase"/>
           <include name="suiteSetup"/>
-          <include name="Login"/>
+          <include name="endTest"/>
+          <include name="open_Url"/>
+          <include name="tearDown"/>
+          <include name="endSuite"/>
           <include name="setUpDriver"/>
+          <include name="ExitLoginPageTest"/>
         </methods>
-      </class> <!-- com.jince.android.tests.APPTestDemo -->
+      </class> <!-- com.jince.android.tests.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

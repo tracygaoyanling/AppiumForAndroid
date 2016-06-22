@@ -17,15 +17,16 @@ import org.testng.annotations.BeforeTest;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import com.jince.android.config.UIConfig;
+import com.jince.android.pages.GuidePage;
 import com.jince.android.utility.ConPrint;
 import com.jince.android.config.ConfigSetUp;
 
 public abstract class BaseTest {
 	
-	public static AndroidDriver<WebElement> driver;
+	protected static AndroidDriver<WebElement> driver;
 	private ITestContext context;
-	public String configFile;
-	public AppiumDriverLocalService service = null;
+	private String configFile;
+	private AppiumDriverLocalService service = null;
 	@BeforeSuite
 	public void suiteSetup(){
 	}
@@ -70,6 +71,8 @@ public abstract class BaseTest {
 	        Thread.sleep(6000);
 	        driver.manage().timeouts().implicitlyWait(UIConfig.PageLoadTimeOut, TimeUnit.SECONDS); 
 			context.setAttribute("CONTEXT_KEY_DRIVER", driver);
+			GuidePage guidePage = new GuidePage(driver);
+			guidePage.EnterAPP();
 		}catch(Exception ex){
 			ConPrint.error("setup error", ex);
 		}
@@ -91,9 +94,9 @@ public abstract class BaseTest {
 	}
 	
 	@BeforeClass
-	public void setUp(ITestContext context) {
+	public void setUp() {
 		ConPrint.info("Set up in BaseTest. [Test Class] "+getClass().getSimpleName());			
-		beforeClass(context);
+		beforeClass();
 	}
 	
 	@AfterClass
@@ -120,7 +123,7 @@ public abstract class BaseTest {
 		
 	}
 
-	protected void beforeClass(ITestContext context){
+	protected void beforeClass(){
 		
 	}
 

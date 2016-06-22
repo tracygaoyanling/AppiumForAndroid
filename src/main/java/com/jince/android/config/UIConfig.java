@@ -10,7 +10,7 @@ public class UIConfig {
 		ConfigUtils.autowireConfig(UIConfig.class,ConfigSetUp.configFile );
 		EnvPaths = InitEnvPaths.FindEnvPaths();
 	}
-	public static String phone;
+	public static String account;
 	public static String password;
 	public static String[] EnvPaths;
 	public static String nodePath;

@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [JinDaShi Android Test]">
+  <test name="Full Test - WWW(failed)">
     <classes>
-      <class name="com.jince.android.tests.APPTestDemo">
+      <class name="com.jince.android.tests.LoginPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="afterTestCase"/>
           <include name="suiteSetup"/>
-          <include name="Login"/>
+          <include name="endTest"/>
+          <include name="InterfaceTest"/>
+          <include name="open_Url"/>
+          <include name="tearDown"/>
+          <include name="endSuite"/>
           <include name="setUpDriver"/>
         </methods>
-      </class> <!-- com.jince.android.tests.APPTestDemo -->
+      </class> <!-- com.jince.android.tests.LoginPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Full Test - WWW(failed) -->
+</suite> <!-- Failed suite [JinDaShi Android Test] -->
