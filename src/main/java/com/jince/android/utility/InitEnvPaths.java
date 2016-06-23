@@ -3,7 +3,10 @@ package com.jince.android.utility;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+/*
+ * 功能：查找本机的Appium.js和node.exe路径
+ * 作者：Make
+ */
 public class InitEnvPaths {
 
 	public static String[] FindEnvPaths(){

@@ -1,72 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="JinDaShi Android Test" duration-ms="124202" started-at="2016-06-22T08:33:13Z" finished-at="2016-06-22T08:35:18Z">
+  <suite name="JinDaShi Android Test" duration-ms="126008" started-at="2016-06-23T08:01:05Z" finished-at="2016-06-23T08:03:11Z">
     <groups>
     </groups>
-    <test name="Full Test - WWW" duration-ms="124202" started-at="2016-06-22T08:33:13Z" finished-at="2016-06-22T08:35:18Z">
+    <test name="Full Test - WWW" duration-ms="126008" started-at="2016-06-23T08:01:05Z" finished-at="2016-06-23T08:03:11Z">
       <class name="com.jince.android.tests.LoginPageTest">
-        <test-method status="PASS" signature="suiteSetup()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="suiteSetup" is-config="true" duration-ms="7" started-at="2016-06-22T16:33:13Z" finished-at="2016-06-22T16:33:13Z">
+        <test-method status="PASS" signature="suiteSetup()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="suiteSetup" is-config="true" duration-ms="8" started-at="2016-06-23T16:01:05Z" finished-at="2016-06-23T16:01:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteSetup -->
-        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="setUpDriver" is-config="true" duration-ms="30281" started-at="2016-06-22T16:33:13Z" finished-at="2016-06-22T16:33:44Z">
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="setUpDriver" is-config="true" duration-ms="38218" started-at="2016-06-23T16:01:05Z" finished-at="2016-06-23T16:01:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7b993c65]]>
+                <![CDATA[org.testng.TestRunner@560348e6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="setUp" is-config="true" duration-ms="11" started-at="2016-06-22T16:33:44Z" finished-at="2016-06-22T16:33:44Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="setUp" is-config="true" duration-ms="1847" started-at="2016-06-23T16:01:43Z" finished-at="2016-06-23T16:01:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="1" started-at="2016-06-22T16:33:44Z" finished-at="2016-06-22T16:33:44Z">
+        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-23T16:01:45Z" finished-at="2016-06-23T16:01:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="GoToLoginPageTest()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="GoToLoginPageTest" duration-ms="3197" started-at="2016-06-22T16:33:44Z" finished-at="2016-06-22T16:33:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GoToLoginPageTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-22T16:33:47Z" finished-at="2016-06-22T16:33:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-22T16:33:47Z" finished-at="2016-06-22T16:33:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="InterfaceTest()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="InterfaceTest" duration-ms="1752" started-at="2016-06-22T16:33:47Z" finished-at="2016-06-22T16:33:49Z">
+        <test-method status="PASS" signature="InterfaceTest()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="InterfaceTest" duration-ms="1757" started-at="2016-06-23T16:01:45Z" finished-at="2016-06-23T16:01:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InterfaceTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-22T16:33:49Z" finished-at="2016-06-22T16:33:49Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-23T16:01:47Z" finished-at="2016-06-23T16:01:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-22T16:33:49Z" finished-at="2016-06-22T16:33:49Z">
+        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="1" started-at="2016-06-23T16:01:47Z" finished-at="2016-06-23T16:01:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="ExitLoginPageTest()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="ExitLoginPageTest" duration-ms="3771" started-at="2016-06-22T16:33:49Z" finished-at="2016-06-22T16:33:53Z">
+        <test-method status="PASS" signature="ExitLoginPageTest()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="ExitLoginPageTest" duration-ms="3722" started-at="2016-06-23T16:01:47Z" finished-at="2016-06-23T16:01:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExitLoginPageTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-22T16:33:53Z" finished-at="2016-06-22T16:33:53Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-06-23T16:01:50Z" finished-at="2016-06-23T16:01:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-22T16:33:53Z" finished-at="2016-06-22T16:33:53Z">
+        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="1" started-at="2016-06-23T16:01:50Z" finished-at="2016-06-23T16:01:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="LoginTest" duration-ms="12031" started-at="2016-06-22T16:33:53Z" data-provider="login" finished-at="2016-06-22T16:34:05Z">
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="LoginTest" duration-ms="11797" started-at="2016-06-23T16:01:50Z" data-provider="login" finished-at="2016-06-23T16:02:02Z">
           <params>
             <param index="0">
               <value>
@@ -82,11 +70,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-06-22T16:34:05Z" finished-at="2016-06-22T16:34:05Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-06-23T16:02:02Z" finished-at="2016-06-23T16:02:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="LoginTest" duration-ms="10533" started-at="2016-06-22T16:34:05Z" data-provider="login" finished-at="2016-06-22T16:34:15Z">
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="LoginTest" duration-ms="10472" started-at="2016-06-23T16:02:02Z" data-provider="login" finished-at="2016-06-23T16:02:13Z">
           <params>
             <param index="0">
               <value>
@@ -102,11 +90,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-22T16:34:05Z" finished-at="2016-06-22T16:34:05Z">
+        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-23T16:02:02Z" finished-at="2016-06-23T16:02:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="LoginTest" duration-ms="11767" started-at="2016-06-22T16:34:15Z" data-provider="login" finished-at="2016-06-22T16:34:27Z">
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="LoginTest" duration-ms="12841" started-at="2016-06-23T16:02:13Z" data-provider="login" finished-at="2016-06-23T16:02:25Z">
           <params>
             <param index="0">
               <value>
@@ -122,23 +110,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-22T16:34:15Z" finished-at="2016-06-22T16:34:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-22T16:34:15Z" finished-at="2016-06-22T16:34:15Z">
+        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-23T16:02:13Z" finished-at="2016-06-23T16:02:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="1" started-at="2016-06-22T16:34:27Z" finished-at="2016-06-22T16:34:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-22T16:34:27Z" finished-at="2016-06-22T16:34:27Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-23T16:02:13Z" finished-at="2016-06-23T16:02:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="LoginTest" duration-ms="14691" started-at="2016-06-22T16:34:27Z" data-provider="login" finished-at="2016-06-22T16:34:42Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-06-23T16:02:25Z" finished-at="2016-06-23T16:02:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="LoginTest" duration-ms="13501" started-at="2016-06-23T16:02:25Z" data-provider="login" finished-at="2016-06-23T16:02:39Z">
           <params>
             <param index="0">
               <value>
@@ -154,15 +138,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="1" started-at="2016-06-22T16:34:42Z" finished-at="2016-06-22T16:34:42Z">
+        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-23T16:02:25Z" finished-at="2016-06-23T16:02:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-22T16:34:42Z" finished-at="2016-06-22T16:34:42Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-06-23T16:02:39Z" finished-at="2016-06-23T16:02:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="LoginTest" duration-ms="18043" started-at="2016-06-22T16:34:42Z" data-provider="login" finished-at="2016-06-22T16:35:00Z">
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="LoginTest" duration-ms="15825" started-at="2016-06-23T16:02:39Z" data-provider="login" finished-at="2016-06-23T16:02:55Z">
           <params>
             <param index="0">
               <value>
@@ -178,15 +162,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-22T16:35:00Z" finished-at="2016-06-22T16:35:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-22T16:35:00Z" finished-at="2016-06-22T16:35:00Z">
+        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-23T16:02:39Z" finished-at="2016-06-23T16:02:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="LoginTest" duration-ms="16881" started-at="2016-06-22T16:35:00Z" data-provider="login" finished-at="2016-06-22T16:35:16Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-23T16:02:55Z" finished-at="2016-06-23T16:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="open_Url" is-config="true" duration-ms="1" started-at="2016-06-23T16:02:55Z" finished-at="2016-06-23T16:02:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_Url -->
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="LoginTest" duration-ms="13968" started-at="2016-06-23T16:02:55Z" data-provider="login" finished-at="2016-06-23T16:03:09Z">
           <params>
             <param index="0">
               <value>
@@ -202,26 +190,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-22T16:35:16Z" finished-at="2016-06-22T16:35:16Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-23T16:03:09Z" finished-at="2016-06-23T16:03:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="tearDown" is-config="true" duration-ms="1" started-at="2016-06-22T16:35:16Z" finished-at="2016-06-22T16:35:16Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="tearDown" is-config="true" duration-ms="1" started-at="2016-06-23T16:03:09Z" finished-at="2016-06-23T16:03:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endTest(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="endTest" is-config="true" duration-ms="1193" started-at="2016-06-22T16:35:16Z" finished-at="2016-06-22T16:35:18Z">
+        <test-method status="PASS" signature="endTest(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="endTest" is-config="true" duration-ms="2014" started-at="2016-06-23T16:03:09Z" finished-at="2016-06-23T16:03:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7b993c65]]>
+                <![CDATA[org.testng.TestRunner@560348e6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="endSuite()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="endSuite" is-config="true" duration-ms="0" started-at="2016-06-22T16:35:18Z" finished-at="2016-06-22T16:35:18Z">
+        <test-method status="PASS" signature="endSuite()[pri:0, instance:com.jince.android.tests.LoginPageTest@3e6fa38a]" name="endSuite" is-config="true" duration-ms="1" started-at="2016-06-23T16:03:11Z" finished-at="2016-06-23T16:03:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSuite -->

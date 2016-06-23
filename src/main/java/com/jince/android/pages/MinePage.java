@@ -1,7 +1,6 @@
 package com.jince.android.pages;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -9,6 +8,10 @@ import com.jince.android.utility.ConPrint;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+/*
+ * 功能：通过PageFactory封装【我的】页面元素以及方法
+ * 作者：Make
+ */
 public class MinePage extends BasePage {
 	
 	//using Android UI selectors, accessibility, id, name, class name, tag and xpath to findElement
@@ -45,8 +48,9 @@ public class MinePage extends BasePage {
 	
 	public MinePage(AndroidDriver<WebElement> driver) {
 		super(driver);
-		PageFactory.initElements(new AppiumFieldDecorator(driver, 5, TimeUnit.SECONDS), this);
+		PageFactory.initElements(new AppiumFieldDecorator(driver, 15, TimeUnit.SECONDS), this);
 	}
+	
 	public boolean GoToMinePage() {
 		try {
 			mineBtn.click();
@@ -60,6 +64,7 @@ public class MinePage extends BasePage {
 		}
 		return true;
 	}
+	
 	public boolean InterfaceCheck(String tx1,String tx2,String tx3,String tx4,
 			String tx5,String tx6,String tx7,String tx8,String tx9,String tx10){
 		try {
@@ -92,19 +97,14 @@ public class MinePage extends BasePage {
 		}
 		return true;
 	}
-//	public boolean openMinePage(){
-//		mineBtn.click();
-//		nicknameBtn.click();
-//		clearCacheBtn
-//		loginPage.accountField.sendKeys(UIConfig.phone);
-//		loginPage.passwordField.sendKeys(UIConfig.password);
-//		loginPage.loginBtn.click();
-//		String myName = nicknameBtn.getText();
-//		if(myName.contentEquals("make")){
-//			return true;
-//		}else{
-//			return false;
-//		}
-//	}
+	public Mine_LoginPage GoToLoginPage(){
+		try {
+			nicknameBtn.click();
+		} catch (NoSuchElementException ex) {
+			ConPrint.failMessage("No Such Element", ex);
+		}
+	
+		return new Mine_LoginPage(driver);
+	}
 
 }

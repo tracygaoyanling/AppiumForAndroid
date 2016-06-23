@@ -4,11 +4,13 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-
+/*
+ * 功能：通过PageFactory封装【新手学堂】页面元素以及方法
+ * 作者：Make
+ */
 public class Mine_XinSchoolPage extends BasePage{
 	MinePage MinePage = new MinePage(driver);
 	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/web_title_tv")
@@ -27,7 +29,7 @@ public class Mine_XinSchoolPage extends BasePage{
 	public WebElement laoLinkX;
 	public Mine_XinSchoolPage(AndroidDriver<WebElement> driver) {
 		super(driver);
-		PageFactory.initElements(new AppiumFieldDecorator(driver, 5 , TimeUnit.SECONDS), this);
+		PageFactory.initElements(new AppiumFieldDecorator(driver, 15 , TimeUnit.SECONDS), this);
 	}
 	public boolean GoToNewbieSchoolPage() {
 		MinePage.xinSchoolBtn.click();

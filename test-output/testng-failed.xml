@@ -5,11 +5,11 @@
     <classes>
       <class name="com.jince.android.tests.LoginPageTest">
         <methods>
+          <include name="LoginTest" invocation-numbers="3 4"/>
           <include name="setUp"/>
           <include name="afterTestCase"/>
           <include name="suiteSetup"/>
           <include name="endTest"/>
-          <include name="InterfaceTest"/>
           <include name="open_Url"/>
           <include name="tearDown"/>
           <include name="endSuite"/>

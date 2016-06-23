@@ -4,7 +4,10 @@ import org.testng.Assert;
 import org.openqa.selenium.WebDriver;
 import org.testng.SkipException;
 
-
+/*
+ * 功能：封装输出日志的一些方法
+ * 作者：Make
+ */
 public class ConPrint {
 public static int foundErrors = 0;
 	

@@ -1,17 +1,18 @@
 package com.jince.android.pages;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-
 import com.jince.android.config.UIConfig;
 import com.jince.android.utility.ConPrint;
-
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+/*
+ * 功能：通过PageFactory封装【登录】页面元素以及方法
+ * 作者：Make
+ */
 public class Mine_LoginPage extends BasePage{
 	MinePage minePage = new MinePage(driver);
 	@AndroidFindBy(xpath ="//android.widget.TextView[contains(@index,2)]")
@@ -30,7 +31,7 @@ public class Mine_LoginPage extends BasePage{
 	public WebElement forgetPwdBtn;
 	public Mine_LoginPage(AndroidDriver<WebElement> driver) {
 		super(driver);
-		PageFactory.initElements(new AppiumFieldDecorator(driver, 5, TimeUnit.SECONDS), this);
+		PageFactory.initElements(new AppiumFieldDecorator(driver, 15, TimeUnit.SECONDS), this);
 	}
 	public boolean GoToLoginPage(){
 		try {
@@ -112,5 +113,4 @@ public class Mine_LoginPage extends BasePage{
 		ConPrint.success();
 		return true;
 	}
-		
 }

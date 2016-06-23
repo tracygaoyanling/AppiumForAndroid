@@ -5,7 +5,6 @@
 		<classes>
 			<class name="com.jince.android.tests.LoginPageTest">
 				<methods>
-					<include name="GoToLoginPageTest"/>
 					<include name="InterfaceTest"/>
 					<include name="ExitLoginPageTest"/>
 					<include name="LoginTest"/>

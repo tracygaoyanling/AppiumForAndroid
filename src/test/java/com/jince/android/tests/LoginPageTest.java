@@ -6,20 +6,17 @@ import org.testng.annotations.Test;
 import com.jince.android.data.LoginData;
 import com.jince.android.pages.MinePage;
 import com.jince.android.pages.Mine_LoginPage;
-
+/*
+ * 功能：【登录】页面的测试类，调用【登录】页面的方法进行测试
+ * 作者：Make
+ */
 public class LoginPageTest extends BaseTest{
 	private Mine_LoginPage loginPage;
 	private MinePage minePage;
 	public void beforeClass(){
-		loginPage = new Mine_LoginPage(driver);
 		minePage = new MinePage(driver);
-	}
-	
-	@Test
-	public void GoToLoginPageTest(){
 		minePage.GoToMinePage();
-		boolean result = loginPage.GoToLoginPage();
-		Assert.assertTrue(result);
+		loginPage = minePage.GoToLoginPage();
 	}
 	
 	@Test

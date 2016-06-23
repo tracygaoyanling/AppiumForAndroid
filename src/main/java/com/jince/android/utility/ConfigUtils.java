@@ -5,7 +5,10 @@ import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.Properties;
-
+/*
+ * 功能：读取属性文件，并把属性文件的值赋值给配置文件中的参数
+ * 作者：Make
+ */
 public class ConfigUtils {
 	public static Properties getProperties(@SuppressWarnings("rawtypes") Class clazz,String filename){
 		InputStream in =null;

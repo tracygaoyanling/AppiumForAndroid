@@ -4,7 +4,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.jince.android.pages.MinePage;
-
+/*
+ * 功能：【我的】页面的测试类，调用【我的】页面的方法进行测试
+ * 作者：Make
+ */
 public class MinePageTest extends BaseTest{
 	MinePage minePage;
 	public void beforeClass(){

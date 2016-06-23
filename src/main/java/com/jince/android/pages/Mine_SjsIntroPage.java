@@ -1,14 +1,15 @@
 package com.jince.android.pages;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-
+/*
+ * 功能：通过PageFactory封装【上金所介绍】页面元素以及方法
+ * 作者：Make
+ */
 public class Mine_SjsIntroPage extends BasePage{
 	MinePage MinePage = new MinePage(driver);
 	@AndroidFindBy(accessibility = "合约 Link")
@@ -56,7 +57,7 @@ public class Mine_SjsIntroPage extends BasePage{
 	
 	public Mine_SjsIntroPage(AndroidDriver<WebElement> driver){
 		super(driver);
-		PageFactory.initElements(new AppiumFieldDecorator(driver, 5 , TimeUnit.SECONDS), this);
+		PageFactory.initElements(new AppiumFieldDecorator(driver, 15 , TimeUnit.SECONDS), this);
 	}
 	public boolean GoToSjsIntroPage(){
 		MinePage.sjsIntroBtn.click();

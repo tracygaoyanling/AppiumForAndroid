@@ -20,7 +20,11 @@ import com.jince.android.config.UIConfig;
 import com.jince.android.pages.GuidePage;
 import com.jince.android.utility.ConPrint;
 import com.jince.android.config.ConfigSetUp;
-
+/*
+ * 功能：基本测试类，其他测试子类都继承于该父类。定义了测试所需的基本属性以及方法
+ * 		执行顺序@BeforeSuite->@BeforeTest->@BeforeClass->@BeforeMethod
+ * 作者：Make
+ */
 public abstract class BaseTest {
 	
 	protected static AndroidDriver<WebElement> driver;
@@ -61,15 +65,17 @@ public abstract class BaseTest {
 	        File appDir = new File(classpathRoot, "apps");
 	        File app = new File(appDir, "gm_autotest.apk");
 	        DesiredCapabilities capabilities = new DesiredCapabilities();
-	        capabilities.setCapability("platformName",UIConfig.platformName);
-	        capabilities.setCapability("deviceName",UIConfig.deviceName);
-	        capabilities.setCapability("platformVersion", UIConfig.platformVersion);
-	        capabilities.setCapability("app", app.getAbsolutePath());
-	        capabilities.setCapability("appPackage", UIConfig.appPackage);
-	        capabilities.setCapability("appActivity", UIConfig.appActivity);
+	        capabilities.setCapability("platformName",UIConfig.platformName);//要测试的手机操作系统
+	        capabilities.setCapability("deviceName",UIConfig.deviceName);//使用的手机设备名称
+	        capabilities.setCapability("platformVersion", UIConfig.platformVersion);//手机操作系统版本
+	        capabilities.setCapability("app", app.getAbsolutePath());//未安装应用时，设置App的路径
+	        capabilities.setCapability("appPackage", UIConfig.appPackage);//待测试的app的java package
+	        capabilities.setCapability("appActivity", UIConfig.appActivity);//待测试的app的Activity名字
+	        capabilities.setCapability("unicodeKeyboard" ,"True");//使用unicode编码
+	        capabilities.setCapability("resetKeyboard", "True");//结束后reset设备默认输入法
 	        driver = new AndroidDriver<WebElement>(service.getUrl(),capabilities);
 	        Thread.sleep(6000);
-	        driver.manage().timeouts().implicitlyWait(UIConfig.PageLoadTimeOut, TimeUnit.SECONDS); 
+	        driver.manage().timeouts().implicitlyWait(UIConfig.PageLoadTimeOut, TimeUnit.SECONDS); //设置隐形等待时间
 			context.setAttribute("CONTEXT_KEY_DRIVER", driver);
 			GuidePage guidePage = new GuidePage(driver);
 			guidePage.EnterAPP();
