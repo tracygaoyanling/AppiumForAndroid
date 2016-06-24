@@ -3,13 +3,15 @@ package com.jince.android.tests;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.jince.android.data.MineCenterData;
 import com.jince.android.pages.MinePage;
 import com.jince.android.pages.Mine_LoginPage;
 import com.jince.android.pages.Mine_MineCenterPage;
 import com.jince.android.utility.ConPrint;
-
+/*
+ * 功能：【个人中心】页面的测试类，调用【个人中心】页面的方法进行测试
+ * 作者：Make
+ */
 public class Mine_MineCenterPageTest extends BaseTest{
 	private Mine_LoginPage loginPage;
 	private MinePage minePage;
