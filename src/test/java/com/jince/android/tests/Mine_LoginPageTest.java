@@ -10,7 +10,7 @@ import com.jince.android.pages.Mine_LoginPage;
  * 功能：【登录】页面的测试类，调用【登录】页面的方法进行测试
  * 作者：Make
  */
-public class LoginPageTest extends BaseTest{
+public class Mine_LoginPageTest extends BaseTest{
 	private Mine_LoginPage loginPage;
 	private MinePage minePage;
 	public void beforeClass(){
@@ -32,9 +32,9 @@ public class LoginPageTest extends BaseTest{
 		loginPage.GoToLoginPage();
 	}
 	
-	@Test(dataProvider="login",dataProviderClass=LoginData.class)
+	@Test(dataProvider="loginFail",dataProviderClass=LoginData.class)
 	public void LoginTest(String account,String password){
-		boolean result = loginPage.LoginTest(account, password);
+		boolean result = loginPage.LoginFailTest(account, password);
 		Assert.assertTrue(result);
 	}
 }

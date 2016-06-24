@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JinDaShi Android Test">
+	<test name="Full Test - WWW" preserve-order="true">
+		<classes>
+			<class name="com.jince.android.tests.Mine_MineCenterPageTest">
+				<methods>
+					<include name="changeNickNameCancelTest"/>
+					<include name="changeNickNameSaveTest"/>
+					<include name="changePwdCancelTest"/>
+					<include name="changePwdSaveTest"/>
+					<include name="logOutTest"/>
+				</methods >
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -3,9 +3,8 @@
 <suite name="Failed suite [JinDaShi Android Test]">
   <test name="Full Test - WWW(failed)">
     <classes>
-      <class name="com.jince.android.tests.LoginPageTest">
+      <class name="com.jince.android.tests.Mine_MineCenterPageTest">
         <methods>
-          <include name="LoginTest" invocation-numbers="3 4"/>
           <include name="setUp"/>
           <include name="afterTestCase"/>
           <include name="suiteSetup"/>
@@ -14,8 +13,9 @@
           <include name="tearDown"/>
           <include name="endSuite"/>
           <include name="setUpDriver"/>
+          <include name="changeNickNameSaveTest" invocation-numbers="0 1 2 3 4 5"/>
         </methods>
-      </class> <!-- com.jince.android.tests.LoginPageTest -->
+      </class> <!-- com.jince.android.tests.Mine_MineCenterPageTest -->
     </classes>
   </test> <!-- Full Test - WWW(failed) -->
 </suite> <!-- Failed suite [JinDaShi Android Test] -->

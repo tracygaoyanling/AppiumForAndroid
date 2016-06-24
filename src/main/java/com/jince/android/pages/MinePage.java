@@ -103,8 +103,16 @@ public class MinePage extends BasePage {
 		} catch (NoSuchElementException ex) {
 			ConPrint.failMessage("No Such Element", ex);
 		}
-	
 		return new Mine_LoginPage(driver);
+	}
+	
+	public Mine_MineCenterPage GoToMineCenterPage(){
+		try {
+			nicknameBtn.click();
+		} catch (NoSuchElementException ex) {
+			ConPrint.failMessage("No Such Element", ex);
+		}
+		return new Mine_MineCenterPage(driver);
 	}
 
 }

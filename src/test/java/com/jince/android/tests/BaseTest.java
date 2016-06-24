@@ -71,8 +71,8 @@ public abstract class BaseTest {
 	        capabilities.setCapability("app", app.getAbsolutePath());//未安装应用时，设置App的路径
 	        capabilities.setCapability("appPackage", UIConfig.appPackage);//待测试的app的java package
 	        capabilities.setCapability("appActivity", UIConfig.appActivity);//待测试的app的Activity名字
-	        capabilities.setCapability("unicodeKeyboard" ,"True");//使用unicode编码
-	        capabilities.setCapability("resetKeyboard", "True");//结束后reset设备默认输入法
+//	        capabilities.setCapability("unicodeKeyboard" ,"True");//使用unicode编码
+//	        capabilities.setCapability("resetKeyboard", "True");//结束后reset设备默认输入法
 	        driver = new AndroidDriver<WebElement>(service.getUrl(),capabilities);
 	        Thread.sleep(6000);
 	        driver.manage().timeouts().implicitlyWait(UIConfig.PageLoadTimeOut, TimeUnit.SECONDS); //设置隐形等待时间

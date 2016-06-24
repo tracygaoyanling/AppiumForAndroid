@@ -80,7 +80,7 @@ public class Mine_LoginPage extends BasePage{
 		ConPrint.success();
 		return true;
 	}
-	public boolean LoginTest(String account,String password){
+	public boolean LoginFailTest(String account,String password){
 		try {
 			ConPrint.test("LoginTest with account = "+account+", password = "+password);
 			if (account==""||password=="") {
@@ -89,20 +89,12 @@ public class Mine_LoginPage extends BasePage{
 				if (loginBtn.isEnabled()) {
 					return false;
 				}
-			}else if (account.equals(UIConfig.account+"1")||password.equals(UIConfig.password+"1")) {
+			}else{
 				accountField.sendKeys(account);
 				passwordField.sendKeys(password);
-				HideKeyboard();
+//				HideKeyboard();
 				loginBtn.click();
 				if (!loginBtn.isDisplayed()) {
-					return false;
-				}
-			}else {
-				accountField.sendKeys(account);
-				passwordField.sendKeys(password);
-				HideKeyboard();
-				loginBtn.click();
-				if (!minePage.nicknameBtn.isDisplayed()) {
 					return false;
 				}
 			}
@@ -111,6 +103,21 @@ public class Mine_LoginPage extends BasePage{
 			return false;
 		}
 		ConPrint.success();
+		return true;
+	}
+	public boolean loginSuccess() {
+		try {
+			accountField.sendKeys("15002152686");
+			passwordField.sendKeys("888888");
+//			HideKeyboard();
+			loginBtn.click();
+			if (!minePage.nicknameBtn.isDisplayed()) {
+				return false;
+			}
+		} catch (NoSuchElementException ex) {
+			ConPrint.failMessage("No Such Element", ex);
+			return false;
+		}
 		return true;
 	}
 }

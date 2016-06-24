@@ -3,7 +3,7 @@
 <suite name="JinDaShi Android Test">
 	<test name="Full Test - WWW" preserve-order="true">
 		<classes>
-			<class name="com.jince.android.tests.LoginPageTest">
+			<class name="com.jince.android.tests.Mine_LoginPageTest">
 				<methods>
 					<include name="InterfaceTest"/>
 					<include name="ExitLoginPageTest"/>

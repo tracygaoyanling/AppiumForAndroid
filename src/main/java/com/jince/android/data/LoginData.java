@@ -8,7 +8,7 @@ import com.jince.android.config.UIConfig;
  * 作者：Make
  */
 public class LoginData {
-	@DataProvider(name="login")
+	@DataProvider(name="loginFail")
 	public static Object[][] login(){
 		return new Object[][]{
 			{"",""},
@@ -16,7 +16,6 @@ public class LoginData {
 			{"",UIConfig.password},
 			{UIConfig.account+"1",UIConfig.password},
 			{UIConfig.account,UIConfig.password+"1"},
-			{UIConfig.account,UIConfig.password}
 		};
 	}
 }

@@ -3,19 +3,18 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.jince.android.tests.LoginPageTest">
+      <class name="com.jince.android.tests.Mine_MineCenterPageTest">
         <methods>
-          <include name="LoginTest" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="afterTestCase"/>
+          <include name="logOutTest"/>
           <include name="suiteSetup"/>
-          <include name="endTest"/>
-          <include name="open_Url"/>
-          <include name="tearDown"/>
-          <include name="endSuite"/>
+          <include name="changePwdCancelTest"/>
+          <include name="changePwdSaveTest"/>
           <include name="setUpDriver"/>
+          <include name="changeNickNameSaveTest"/>
+          <include name="changeNickNameCancelTest"/>
         </methods>
-      </class> <!-- com.jince.android.tests.LoginPageTest -->
+      </class> <!-- com.jince.android.tests.Mine_MineCenterPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
