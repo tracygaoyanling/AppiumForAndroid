@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JinDaShi Android Test" parallel="false"
+skipfailedinvocationcounts="true" configfailurepolicy="continue" preserve-order="true">
+	<test name="Mine_LoginPageTest" preserve-order="true">
+		<classes>
+			<class name="com.jince.android.tests.Mine_LoginPageTest">
+				<methods>
+					<include name="InterfaceTest"/>
+					<include name="ExitLoginPageTest"/>
+					<include name="LoginTest"/>
+				</methods >
+			</class>
+		</classes>
+	</test>
+	<test name="Mine_MineCenterPageTest" preserve-order="true">
+		<classes>
+			<class name="com.jince.android.tests.Mine_MineCenterPageTest">
+				<methods>
+					<include name="changeNickNameCancelTest"/>
+					<include name="changeNickNameSaveTest"/>
+					<include name="changePwdCancelTest"/>
+					<include name="changePwdSaveTest"/>
+					<include name="logOutTest"/>
+				</methods >
+			</class>
+		</classes>
+	</test>
+	<test name="HomePageTest" preserve-order="true">
+		<classes>
+			<class name="com.jince.android.tests.HomePageTest">
+				<methods>
+					<include name="InterfaceTest"/>
+					<include name="HotMarketTest"/>
+					<include name="LiveRoomTest"/>
+					<include name="NewsTest"/>
+					<include name="FinanceTest"/>
+				</methods >
+			</class>
+		</classes>
+	</test>
+	<test name="Mine_MinePageTest" preserve-order="true">
+		<classes>
+			<class name="com.jince.android.tests.MinePageTest">
+				<methods>
+					<include name="InterfaceTest"/>
+					<include name="PushSettingTest"/>
+				</methods >
+			</class>
+			<class name="com.jince.android.tests.Mine_SjsIntroPageTest"></class>
+			<class name="com.jince.android.tests.Mine_XinSchoolPageTest"></class>
+			<class name="com.jince.android.tests.Mine_FeedbackPageTest">
+				<methods>
+					<include name="InterfaceTest"/>
+					<include name="SubmitFeedbackTest"/>
+					<include name="FeedbackHistoryTest"/>
+					<include name="HotProblemTest"/>
+				</methods >
+			</class>
+		</classes>
+	</test>
+</suite>

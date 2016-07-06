@@ -28,6 +28,7 @@ public class Mine_MineCenterPageTest extends BaseTest{
 			ConPrint.failMessage("No Such Element", ex);
 		}	
 	}
+	
 	@Test
 	public void changeNickNameCancelTest(){
 		boolean result = mineCenterPage.changeNickNameCancel();

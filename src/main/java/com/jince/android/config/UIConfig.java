@@ -13,6 +13,7 @@ public class UIConfig {
 		ConfigUtils.autowireConfig(UIConfig.class,ConfigSetUp.configFile );
 		EnvPaths = InitEnvPaths.FindEnvPaths();
 	}
+	public static boolean needInstall;
 	public static String account;
 	public static String password;
 	public static String[] EnvPaths;
@@ -24,4 +25,5 @@ public class UIConfig {
 	public static String appPackage;
 	public static String appActivity;
 	public static long PageLoadTimeOut;
+	public static String feedbackContent;
 }

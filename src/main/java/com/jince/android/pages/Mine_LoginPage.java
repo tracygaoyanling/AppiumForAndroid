@@ -4,7 +4,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import com.jince.android.config.UIConfig;
 import com.jince.android.utility.ConPrint;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -92,7 +91,6 @@ public class Mine_LoginPage extends BasePage{
 			}else{
 				accountField.sendKeys(account);
 				passwordField.sendKeys(password);
-//				HideKeyboard();
 				loginBtn.click();
 				if (!loginBtn.isDisplayed()) {
 					return false;
@@ -109,11 +107,7 @@ public class Mine_LoginPage extends BasePage{
 		try {
 			accountField.sendKeys("15002152686");
 			passwordField.sendKeys("888888");
-//			HideKeyboard();
 			loginBtn.click();
-			if (!minePage.nicknameBtn.isDisplayed()) {
-				return false;
-			}
 		} catch (NoSuchElementException ex) {
 			ConPrint.failMessage("No Such Element", ex);
 			return false;

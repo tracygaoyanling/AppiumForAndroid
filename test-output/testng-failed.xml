@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [JinDaShi Android Test]">
-  <test name="Full Test - WWW(failed)">
+  <test name="Mine_LoginPageTest(failed)">
     <classes>
-      <class name="com.jince.android.tests.Mine_MineCenterPageTest">
+      <class name="com.jince.android.tests.Mine_LoginPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="afterTestCase"/>
           <include name="suiteSetup"/>
-          <include name="endTest"/>
-          <include name="open_Url"/>
-          <include name="tearDown"/>
-          <include name="endSuite"/>
+          <include name="ExitLoginPageTest"/>
           <include name="setUpDriver"/>
-          <include name="changeNickNameSaveTest" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="LoginTest"/>
+          <include name="InterfaceTest"/>
         </methods>
-      </class> <!-- com.jince.android.tests.Mine_MineCenterPageTest -->
+      </class> <!-- com.jince.android.tests.Mine_LoginPageTest -->
     </classes>
-  </test> <!-- Full Test - WWW(failed) -->
+  </test> <!-- Mine_LoginPageTest(failed) -->
 </suite> <!-- Failed suite [JinDaShi Android Test] -->

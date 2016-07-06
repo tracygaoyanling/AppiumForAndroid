@@ -1,8 +1,6 @@
 package com.jince.android.pages;
 
 import java.util.concurrent.TimeUnit;
-
-import org.apache.regexp.recompile;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;

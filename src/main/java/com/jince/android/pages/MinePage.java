@@ -45,7 +45,12 @@ public class MinePage extends BasePage {
 	public WebElement kefuBtn;
 	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/tv_wd")
 	public WebElement mineBtn;
-	
+	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/pushsettings_togglebutton")
+	private WebElement pushToggleBtn;
+	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/actionbar_back")
+	private WebElement backBtn;
+	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/exit_login_btn")
+	public WebElement logoutBtn;
 	public MinePage(AndroidDriver<WebElement> driver) {
 		super(driver);
 		PageFactory.initElements(new AppiumFieldDecorator(driver, 15, TimeUnit.SECONDS), this);
@@ -65,11 +70,10 @@ public class MinePage extends BasePage {
 		return true;
 	}
 	
-	public boolean InterfaceCheck(String tx1,String tx2,String tx3,String tx4,
-			String tx5,String tx6,String tx7,String tx8,String tx9,String tx10){
+	public boolean InterfaceCheck(String tx1,String tx2,String tx3,
+			String tx4,String tx5,String tx6,String tx7,String tx8,String tx9){
 		try {
 			String titleText = title.getAttribute("text");
-			String nicknameText = nicknameBtn.getAttribute("text");
 			String sjsIntroText = sjsIntroBtn.getAttribute("text");
 			String xinSchoolText = xinSchoolBtn.getAttribute("text");
 			String feedbackText = feedbackBtn.getAttribute("text");
@@ -79,15 +83,14 @@ public class MinePage extends BasePage {
 			String shareText = shareBtn.getAttribute("text");
 			String aboutText = aboutBtn.getAttribute("text");
 			if (!(titleText.equals(tx1)
-					&&nicknameText.equals(tx2)
-					&&sjsIntroText.equals(tx3)
-					&&xinSchoolText.equals(tx4)
-					&&feedbackText.equals(tx5)
-					&&hotlineText.equals(tx6)
-					&&pushText.equals(tx7)
-					&&clearText.equals(tx8)
-					&&shareText.equals(tx9)
-					&&aboutText.equals(tx10)
+					&&sjsIntroText.equals(tx2)
+					&&xinSchoolText.equals(tx3)
+					&&feedbackText.equals(tx4)
+					&&hotlineText.equals(tx5)
+					&&pushText.equals(tx6)
+					&&clearText.equals(tx7)
+					&&shareText.equals(tx8)
+					&&aboutText.equals(tx9)
 					)) {
 				return false;
 			}
@@ -96,6 +99,14 @@ public class MinePage extends BasePage {
 			return false;
 		}
 		return true;
+	}
+	public HomePage GoToHomePage(){
+		try {
+			homeBtn.click();
+		} catch (NoSuchElementException ex) {
+			ConPrint.failMessage("No Such Element", ex);
+		}
+		return new HomePage(driver);
 	}
 	public Mine_LoginPage GoToLoginPage(){
 		try {
@@ -113,6 +124,54 @@ public class MinePage extends BasePage {
 			ConPrint.failMessage("No Such Element", ex);
 		}
 		return new Mine_MineCenterPage(driver);
+	}
+	
+	public Mine_SjsIntroPage GoToSjsIntroPage(){
+		try {
+			sjsIntroBtn.click();
+		} catch (NoSuchElementException ex) {
+			ConPrint.failMessage("No Such Element", ex);
+		}
+		return new Mine_SjsIntroPage(driver);
+	}
+	public Mine_FeedbackPage GoToFeedbackPage(){
+		try {
+			feedbackBtn.click();
+		} catch (NoSuchElementException ex) {
+			ConPrint.failMessage("No Such Element", ex);
+		}
+		return new Mine_FeedbackPage(driver);
+	}
+	public boolean pushSetting() {
+		try {
+			pushSetBtn.click();
+			String currentStatus = pushToggleBtn.getAttribute("checked");
+			String newStatus;
+			if (currentStatus.equals("flase")) {
+				pushToggleBtn.click();
+				newStatus = pushToggleBtn.getAttribute("checked");
+			}else{
+				pushToggleBtn.click();
+				newStatus = pushToggleBtn.getAttribute("checked");
+			}
+			backBtn.click();
+			return !currentStatus.equals(newStatus);
+		} catch (NoSuchElementException ex) {
+			ConPrint.failMessage("No Such Element", ex);
+			return false;
+		}
+	}
+	//退出登录
+	public boolean logOut(){
+		try {
+			GoToMinePage();
+			GoToMineCenterPage();
+			logoutBtn.click();			
+		} catch (NoSuchElementException ex) {
+			ConPrint.failMessage("No Such Element", ex);
+			return false;
+		}
+		return true;
 	}
 
 }

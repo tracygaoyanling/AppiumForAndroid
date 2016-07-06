@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="JinDaShi Android Test">
-	<test name="Full Test - WWW" preserve-order="true">
+	<test name="Mine_MinePageTest" preserve-order="true">
 		<classes>
 			<class name="com.jince.android.tests.MinePageTest">
 				<methods>
-					<include name="GoToMinePageTest"/>
 					<include name="InterfaceTest"/>
+					<include name="PushSettingTest"/>
+				</methods >
+			</class>
+			<class name="com.jince.android.tests.Mine_SjsIntroPageTest"></class>
+			<class name="com.jince.android.tests.Mine_XinSchoolPageTest"></class>
+			<class name="com.jince.android.tests.Mine_FeedbackPageTest">
+				<methods>
+					<include name="InterfaceTest"/>
+					<include name="SubmitFeedbackTest"/>
+					<include name="FeedbackHistoryTest"/>
+					<include name="HotProblemTest"/>
 				</methods >
 			</class>
 		</classes>

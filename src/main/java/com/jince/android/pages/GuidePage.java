@@ -32,6 +32,7 @@ public class GuidePage extends BasePage{
 	    	swipeTo.Left(0);
 	    	swipeTo.Left(0);
 	    	swipeTo.Left(0);
+	    	swipeTo.Left(0);
 	    	enterExperienceBtn.click();
 	    	Thread.sleep(6000);
 	    	GoBack();

@@ -1,10 +1,8 @@
 package com.jince.android.tests;
 import io.appium.java_client.android.AndroidDriver;
-import java.io.File;
-import java.util.concurrent.TimeUnit;
 
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -19,6 +17,7 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 import com.jince.android.config.UIConfig;
 import com.jince.android.pages.GuidePage;
 import com.jince.android.utility.ConPrint;
+import com.jince.android.config.CapabilitiesFactory;
 import com.jince.android.config.ConfigSetUp;
 /*
  * 功能：基本测试类，其他测试子类都继承于该父类。定义了测试所需的基本属性以及方法
@@ -33,11 +32,12 @@ public abstract class BaseTest {
 	private AppiumDriverLocalService service = null;
 	@BeforeSuite
 	public void suiteSetup(){
+		ConPrint.info("Running BaseTest BeforeSuite...");
 	}
 	
 	@AfterSuite
 	public void endSuite() {
-		
+		ConPrint.info("Running BaseTest AfterSuite...");
 	}
 	
 	@BeforeTest
@@ -60,20 +60,7 @@ public abstract class BaseTest {
 	            throw new RuntimeException("An appium server node is not started!");
 	        }
 			this.context = context;
-			beforeTest(context);
-			File classpathRoot = new File(System.getProperty("user.dir"));
-	        File appDir = new File(classpathRoot, "apps");
-	        File app = new File(appDir, "gm_autotest.apk");
-	        DesiredCapabilities capabilities = new DesiredCapabilities();
-	        capabilities.setCapability("platformName",UIConfig.platformName);//要测试的手机操作系统
-	        capabilities.setCapability("deviceName",UIConfig.deviceName);//使用的手机设备名称
-	        capabilities.setCapability("platformVersion", UIConfig.platformVersion);//手机操作系统版本
-	        capabilities.setCapability("app", app.getAbsolutePath());//未安装应用时，设置App的路径
-	        capabilities.setCapability("appPackage", UIConfig.appPackage);//待测试的app的java package
-	        capabilities.setCapability("appActivity", UIConfig.appActivity);//待测试的app的Activity名字
-	        capabilities.setCapability("unicodeKeyboard" ,"True");//使用unicode编码
-	        capabilities.setCapability("resetKeyboard", "True");//结束后reset设备默认输入法
-	        driver = new AndroidDriver<WebElement>(service.getUrl(),capabilities);
+	        driver = new AndroidDriver<WebElement>(service.getUrl(),CapabilitiesFactory.getCapabilities());
 	        Thread.sleep(6000);
 	        driver.manage().timeouts().implicitlyWait(UIConfig.PageLoadTimeOut, TimeUnit.SECONDS); //设置隐形等待时间
 			context.setAttribute("CONTEXT_KEY_DRIVER", driver);
@@ -112,7 +99,7 @@ public abstract class BaseTest {
 	}
 
 	@BeforeMethod
-    public void open_Url() throws Exception {
+    public void beforeTestCase() throws Exception {
 		beforeMethod();
 	}
 	
@@ -126,23 +113,23 @@ public abstract class BaseTest {
 	}
 	
 	protected void afterMethod(){
-		
+		ConPrint.info("Running BaseTest AfterMethod...");
 	}
 
 	protected void beforeClass(){
-		
+		ConPrint.info("Running BaseTest BeforeClass...");
 	}
 
 	protected void afterClass(){
-	
+		ConPrint.info("Running BaseTest AfterClass...");
 	}
 	
-	protected void beforeTest(ITestContext context){
-		
+	protected void beforeTest(){
+		ConPrint.info("Running BaseTest BeforeTest...");
 	}
 	
 	protected void afterTest(){
-		
+		ConPrint.info("Running BaseTest AfterTest...");
 	}
 	
 	protected void quitDriver() {

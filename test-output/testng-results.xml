@@ -1,44 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="15" passed="15">
+<testng-results skipped="0" failed="0" total="45" passed="45">
   <reporter-output>
   </reporter-output>
-  <suite name="JinDaShi Android Test" duration-ms="280423" started-at="2016-06-24T08:49:40Z" finished-at="2016-06-24T08:54:21Z">
+  <suite name="JinDaShi Android Test" duration-ms="844245" started-at="2016-07-06T08:27:13Z" finished-at="2016-07-06T08:41:17Z">
     <groups>
     </groups>
-    <test name="Full Test - WWW" duration-ms="280423" started-at="2016-06-24T08:49:40Z" finished-at="2016-06-24T08:54:21Z">
-      <class name="com.jince.android.tests.Mine_MineCenterPageTest">
-        <test-method status="PASS" signature="suiteSetup()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="suiteSetup" is-config="true" duration-ms="8" started-at="2016-06-24T16:49:40Z" finished-at="2016-06-24T16:49:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- suiteSetup -->
-        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="setUpDriver" is-config="true" duration-ms="30964" started-at="2016-06-24T16:49:40Z" finished-at="2016-06-24T16:50:11Z">
+    <test name="Mine_LoginPageTest" duration-ms="106875" started-at="2016-07-06T08:27:13Z" finished-at="2016-07-06T08:29:00Z">
+      <class name="com.jince.android.tests.Mine_LoginPageTest">
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="setUpDriver" is-config="true" duration-ms="34240" started-at="2016-07-06T16:27:13Z" finished-at="2016-07-06T16:27:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5456afaa]]>
+                <![CDATA[org.testng.TestRunner@1b45c0e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="setUp" is-config="true" duration-ms="16581" started-at="2016-06-24T16:50:11Z" finished-at="2016-06-24T16:50:28Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="setUp" is-config="true" duration-ms="2177" started-at="2016-07-06T16:27:47Z" finished-at="2016-07-06T16:27:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-24T16:50:28Z" finished-at="2016-06-24T16:50:28Z">
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="beforeTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:27:50Z" finished-at="2016-07-06T16:27:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="changeNickNameCancelTest()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="changeNickNameCancelTest" duration-ms="5814" started-at="2016-06-24T16:50:28Z" finished-at="2016-06-24T16:50:34Z">
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="InterfaceTest()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="InterfaceTest" duration-ms="1709" started-at="2016-07-06T16:27:50Z" finished-at="2016-07-06T16:27:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- changeNickNameCancelTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-24T16:50:34Z" finished-at="2016-06-24T16:50:34Z">
+        </test-method> <!-- InterfaceTest -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:27:51Z" finished-at="2016-07-06T16:27:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="ExitLoginPageTest()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="ExitLoginPageTest" duration-ms="3666" started-at="2016-07-06T16:27:51Z" finished-at="2016-07-06T16:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExitLoginPageTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:27:51Z" finished-at="2016-07-06T16:27:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="changeNickNameSaveTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="changeNickNameSaveTest" duration-ms="13468" started-at="2016-06-24T16:50:34Z" data-provider="NickName" finished-at="2016-06-24T16:50:47Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:27:55Z" finished-at="2016-07-06T16:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:27:55Z" finished-at="2016-07-06T16:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="LoginTest" duration-ms="11047" started-at="2016-07-06T16:27:55Z" data-provider="loginFail" finished-at="2016-07-06T16:28:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:28:06Z" finished-at="2016-07-06T16:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:28:06Z" finished-at="2016-07-06T16:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="LoginTest" duration-ms="11126" started-at="2016-07-06T16:28:06Z" data-provider="loginFail" finished-at="2016-07-06T16:28:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15002152686]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:28:17Z" finished-at="2016-07-06T16:28:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:28:17Z" finished-at="2016-07-06T16:28:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="LoginTest" duration-ms="12318" started-at="2016-07-06T16:28:17Z" data-provider="loginFail" finished-at="2016-07-06T16:28:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[888888]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:28:29Z" finished-at="2016-07-06T16:28:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="LoginTest" duration-ms="12938" started-at="2016-07-06T16:28:29Z" data-provider="loginFail" finished-at="2016-07-06T16:28:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[150021526861]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[888888]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:28:29Z" finished-at="2016-07-06T16:28:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:28:42Z" finished-at="2016-07-06T16:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="LoginTest" duration-ms="15731" started-at="2016-07-06T16:28:42Z" data-provider="loginFail" finished-at="2016-07-06T16:28:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15002152686]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8888881]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:28:42Z" finished-at="2016-07-06T16:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:28:58Z" finished-at="2016-07-06T16:28:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-07-06T16:28:58Z" finished-at="2016-07-06T16:28:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endTest(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.Mine_LoginPageTest@604ed9f0]" name="endTest" is-config="true" duration-ms="1879" started-at="2016-07-06T16:28:58Z" finished-at="2016-07-06T16:29:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b45c0e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.jince.android.tests.Mine_LoginPageTest -->
+    </test> <!-- Mine_LoginPageTest -->
+    <test name="Mine_MineCenterPageTest" duration-ms="282949" started-at="2016-07-06T08:29:00Z" finished-at="2016-07-06T08:33:43Z">
+      <class name="com.jince.android.tests.Mine_MineCenterPageTest">
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="setUpDriver" is-config="true" duration-ms="33206" started-at="2016-07-06T16:29:00Z" finished-at="2016-07-06T16:29:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73a8da0f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="setUp" is-config="true" duration-ms="16301" started-at="2016-07-06T16:29:33Z" finished-at="2016-07-06T16:29:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="22" started-at="2016-07-06T16:29:50Z" finished-at="2016-07-06T16:29:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="changeNickNameCancelTest()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="changeNickNameCancelTest" duration-ms="5896" started-at="2016-07-06T16:29:50Z" finished-at="2016-07-06T16:29:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeNickNameCancelTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:29:55Z" finished-at="2016-07-06T16:29:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:29:55Z" finished-at="2016-07-06T16:29:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="changeNickNameSaveTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="changeNickNameSaveTest" duration-ms="13479" started-at="2016-07-06T16:29:55Z" data-provider="NickName" finished-at="2016-07-06T16:30:09Z">
           <params>
             <param index="0">
               <value>
@@ -54,19 +232,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeNickNameSaveTest -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-24T16:50:34Z" finished-at="2016-06-24T16:50:34Z">
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:30:09Z" finished-at="2016-07-06T16:30:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-06-24T16:50:47Z" finished-at="2016-06-24T16:50:47Z">
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:30:09Z" finished-at="2016-07-06T16:30:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-24T16:50:47Z" finished-at="2016-06-24T16:50:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="changeNickNameSaveTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="changeNickNameSaveTest" duration-ms="14454" started-at="2016-06-24T16:50:47Z" data-provider="NickName" finished-at="2016-06-24T16:51:02Z">
+        <test-method status="PASS" signature="changeNickNameSaveTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="changeNickNameSaveTest" duration-ms="14348" started-at="2016-07-06T16:30:09Z" data-provider="NickName" finished-at="2016-07-06T16:30:23Z">
           <params>
             <param index="0">
               <value>
@@ -82,15 +256,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeNickNameSaveTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-24T16:51:02Z" finished-at="2016-06-24T16:51:02Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:30:23Z" finished-at="2016-07-06T16:30:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="1" started-at="2016-06-24T16:51:02Z" finished-at="2016-06-24T16:51:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="changeNickNameSaveTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="changeNickNameSaveTest" duration-ms="14160" started-at="2016-06-24T16:51:02Z" data-provider="NickName" finished-at="2016-06-24T16:51:16Z">
+        <test-method status="PASS" signature="changeNickNameSaveTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="changeNickNameSaveTest" duration-ms="14032" started-at="2016-07-06T16:30:23Z" data-provider="NickName" finished-at="2016-07-06T16:30:37Z">
           <params>
             <param index="0">
               <value>
@@ -106,15 +276,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeNickNameSaveTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-06-24T16:51:16Z" finished-at="2016-06-24T16:51:16Z">
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:30:23Z" finished-at="2016-07-06T16:30:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="2" started-at="2016-07-06T16:30:37Z" finished-at="2016-07-06T16:30:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-24T16:51:16Z" finished-at="2016-06-24T16:51:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="changeNickNameSaveTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="changeNickNameSaveTest" duration-ms="14130" started-at="2016-06-24T16:51:16Z" data-provider="NickName" finished-at="2016-06-24T16:51:30Z">
+        <test-method status="PASS" signature="changeNickNameSaveTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="changeNickNameSaveTest" duration-ms="14136" started-at="2016-07-06T16:30:37Z" data-provider="NickName" finished-at="2016-07-06T16:30:51Z">
           <params>
             <param index="0">
               <value>
@@ -130,15 +300,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeNickNameSaveTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-24T16:51:30Z" finished-at="2016-06-24T16:51:30Z">
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:30:37Z" finished-at="2016-07-06T16:30:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="4" started-at="2016-06-24T16:51:30Z" finished-at="2016-06-24T16:51:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="changeNickNameSaveTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="changeNickNameSaveTest" duration-ms="14245" started-at="2016-06-24T16:51:30Z" data-provider="NickName" finished-at="2016-06-24T16:51:44Z">
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="changeNickNameSaveTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="changeNickNameSaveTest" duration-ms="14038" started-at="2016-07-06T16:30:51Z" data-provider="NickName" finished-at="2016-07-06T16:31:05Z">
           <params>
             <param index="0">
               <value>
@@ -154,15 +320,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeNickNameSaveTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-06-24T16:51:44Z" finished-at="2016-06-24T16:51:44Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:30:51Z" finished-at="2016-07-06T16:30:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-24T16:51:44Z" finished-at="2016-06-24T16:51:44Z">
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:30:51Z" finished-at="2016-07-06T16:30:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="changeNickNameSaveTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="changeNickNameSaveTest" duration-ms="11424" started-at="2016-06-24T16:51:44Z" data-provider="NickName" finished-at="2016-06-24T16:51:56Z">
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:31:05Z" finished-at="2016-07-06T16:31:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:31:05Z" finished-at="2016-07-06T16:31:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="changeNickNameSaveTest(java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="changeNickNameSaveTest" duration-ms="10130" started-at="2016-07-06T16:31:05Z" data-provider="NickName" finished-at="2016-07-06T16:31:16Z">
           <params>
             <param index="0">
               <value>
@@ -171,34 +345,34 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[ftw4]]>
+                <![CDATA[2ngm]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeNickNameSaveTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-24T16:51:56Z" finished-at="2016-06-24T16:51:56Z">
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:31:16Z" finished-at="2016-07-06T16:31:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:31:16Z" finished-at="2016-07-06T16:31:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="changePwdCancelTest()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="changePwdCancelTest" duration-ms="4722" started-at="2016-06-24T16:51:56Z" finished-at="2016-06-24T16:52:00Z">
+        <test-method status="PASS" signature="changePwdCancelTest()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="changePwdCancelTest" duration-ms="4777" started-at="2016-07-06T16:31:16Z" finished-at="2016-07-06T16:31:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePwdCancelTest -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-24T16:51:56Z" finished-at="2016-06-24T16:51:56Z">
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:31:20Z" finished-at="2016-07-06T16:31:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-24T16:52:00Z" finished-at="2016-06-24T16:52:00Z">
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:31:20Z" finished-at="2016-07-06T16:31:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="1" started-at="2016-06-24T16:52:00Z" finished-at="2016-06-24T16:52:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="changePwdSaveTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="changePwdSaveTest" duration-ms="23607" started-at="2016-06-24T16:52:00Z" data-provider="PwdData" finished-at="2016-06-24T16:52:24Z">
+        <test-method status="PASS" signature="changePwdSaveTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="changePwdSaveTest" duration-ms="23371" started-at="2016-07-06T16:31:20Z" data-provider="PwdData" finished-at="2016-07-06T16:31:44Z">
           <params>
             <param index="0">
               <value>
@@ -224,15 +398,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePwdSaveTest -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="2" started-at="2016-06-24T16:52:24Z" finished-at="2016-06-24T16:52:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-24T16:52:24Z" finished-at="2016-06-24T16:52:24Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="2" started-at="2016-07-06T16:31:44Z" finished-at="2016-07-06T16:31:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="changePwdSaveTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="changePwdSaveTest" duration-ms="24136" started-at="2016-06-24T16:52:24Z" data-provider="PwdData" finished-at="2016-06-24T16:52:48Z">
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:31:44Z" finished-at="2016-07-06T16:31:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="changePwdSaveTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="changePwdSaveTest" duration-ms="24071" started-at="2016-07-06T16:31:44Z" data-provider="PwdData" finished-at="2016-07-06T16:32:08Z">
           <params>
             <param index="0">
               <value>
@@ -258,11 +432,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePwdSaveTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="5" started-at="2016-06-24T16:52:48Z" finished-at="2016-06-24T16:52:48Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="3" started-at="2016-07-06T16:32:08Z" finished-at="2016-07-06T16:32:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="changePwdSaveTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="changePwdSaveTest" duration-ms="24372" started-at="2016-06-24T16:52:48Z" data-provider="PwdData" finished-at="2016-06-24T16:53:13Z">
+        <test-method status="PASS" signature="changePwdSaveTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="changePwdSaveTest" duration-ms="24309" started-at="2016-07-06T16:32:08Z" data-provider="PwdData" finished-at="2016-07-06T16:32:32Z">
           <params>
             <param index="0">
               <value>
@@ -288,15 +462,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePwdSaveTest -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-24T16:52:48Z" finished-at="2016-06-24T16:52:48Z">
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:32:08Z" finished-at="2016-07-06T16:32:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-06-24T16:53:13Z" finished-at="2016-06-24T16:53:13Z">
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:32:32Z" finished-at="2016-07-06T16:32:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="changePwdSaveTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="changePwdSaveTest" duration-ms="24244" started-at="2016-06-24T16:53:13Z" data-provider="PwdData" finished-at="2016-06-24T16:53:37Z">
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:32:32Z" finished-at="2016-07-06T16:32:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="changePwdSaveTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="changePwdSaveTest" duration-ms="24321" started-at="2016-07-06T16:32:32Z" data-provider="PwdData" finished-at="2016-07-06T16:32:56Z">
           <params>
             <param index="0">
               <value>
@@ -322,19 +500,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePwdSaveTest -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-24T16:53:13Z" finished-at="2016-06-24T16:53:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="0" started-at="2016-06-24T16:53:37Z" finished-at="2016-06-24T16:53:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-24T16:53:37Z" finished-at="2016-06-24T16:53:37Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:32:56Z" finished-at="2016-07-06T16:32:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="changePwdSaveTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="changePwdSaveTest" duration-ms="20645" started-at="2016-06-24T16:53:37Z" data-provider="PwdData" finished-at="2016-06-24T16:53:57Z">
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:32:56Z" finished-at="2016-07-06T16:32:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="changePwdSaveTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="changePwdSaveTest" duration-ms="20332" started-at="2016-07-06T16:32:56Z" data-provider="PwdData" finished-at="2016-07-06T16:33:17Z">
           <params>
             <param index="0">
               <value>
@@ -360,15 +534,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePwdSaveTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-24T16:53:57Z" finished-at="2016-06-24T16:53:57Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:33:17Z" finished-at="2016-07-06T16:33:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="1" started-at="2016-06-24T16:53:57Z" finished-at="2016-06-24T16:53:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="changePwdSaveTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="changePwdSaveTest" duration-ms="18881" started-at="2016-06-24T16:53:57Z" data-provider="PwdData" finished-at="2016-06-24T16:54:16Z">
+        <test-method status="PASS" signature="changePwdSaveTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="changePwdSaveTest" duration-ms="21096" started-at="2016-07-06T16:33:17Z" data-provider="PwdData" finished-at="2016-07-06T16:33:38Z">
           <params>
             <param index="0">
               <value>
@@ -394,42 +564,492 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePwdSaveTest -->
-        <test-method status="PASS" signature="open_Url()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="open_Url" is-config="true" duration-ms="1" started-at="2016-06-24T16:54:16Z" finished-at="2016-06-24T16:54:16Z">
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:33:17Z" finished-at="2016-07-06T16:33:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_Url -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-24T16:54:16Z" finished-at="2016-06-24T16:54:16Z">
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:33:38Z" finished-at="2016-07-06T16:33:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="logOutTest()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="logOutTest" duration-ms="3190" started-at="2016-06-24T16:54:16Z" finished-at="2016-06-24T16:54:20Z">
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:33:38Z" finished-at="2016-07-06T16:33:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="logOutTest()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="logOutTest" duration-ms="3195" started-at="2016-07-06T16:33:38Z" finished-at="2016-07-06T16:33:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutTest -->
-        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-06-24T16:54:20Z" finished-at="2016-06-24T16:54:20Z">
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:33:41Z" finished-at="2016-07-06T16:33:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="tearDown" is-config="true" duration-ms="1" started-at="2016-06-24T16:54:20Z" finished-at="2016-06-24T16:54:20Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="tearDown" is-config="true" duration-ms="1" started-at="2016-07-06T16:33:41Z" finished-at="2016-07-06T16:33:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endTest(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="endTest" is-config="true" duration-ms="1301" started-at="2016-06-24T16:54:20Z" finished-at="2016-06-24T16:54:21Z">
+        <test-method status="PASS" signature="endTest(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@7085bdee]" name="endTest" is-config="true" duration-ms="1859" started-at="2016-07-06T16:33:41Z" finished-at="2016-07-06T16:33:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5456afaa]]>
+                <![CDATA[org.testng.TestRunner@73a8da0f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="endSuite()[pri:0, instance:com.jince.android.tests.Mine_MineCenterPageTest@1bce4f0a]" name="endSuite" is-config="true" duration-ms="1" started-at="2016-06-24T16:54:21Z" finished-at="2016-06-24T16:54:21Z">
+      </class> <!-- com.jince.android.tests.Mine_MineCenterPageTest -->
+    </test> <!-- Mine_MineCenterPageTest -->
+    <test name="HomePageTest" duration-ms="201002" started-at="2016-07-06T08:33:43Z" finished-at="2016-07-06T08:37:04Z">
+      <class name="com.jince.android.tests.HomePageTest">
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="setUpDriver" is-config="true" duration-ms="33076" started-at="2016-07-06T16:33:43Z" finished-at="2016-07-06T16:34:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@50dfbc58]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="setUp" is-config="true" duration-ms="16000" started-at="2016-07-06T16:34:16Z" finished-at="2016-07-06T16:34:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="beforeTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:34:32Z" finished-at="2016-07-06T16:34:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="InterfaceTest()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="InterfaceTest" duration-ms="4343" started-at="2016-07-06T16:34:32Z" finished-at="2016-07-06T16:34:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InterfaceTest -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:34:36Z" finished-at="2016-07-06T16:34:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:34:36Z" finished-at="2016-07-06T16:34:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="HotMarketTest()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="HotMarketTest" duration-ms="18560" started-at="2016-07-06T16:34:36Z" finished-at="2016-07-06T16:34:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HotMarketTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:34:55Z" finished-at="2016-07-06T16:34:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:34:55Z" finished-at="2016-07-06T16:34:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="LiveRoomTest()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="LiveRoomTest" duration-ms="82658" started-at="2016-07-06T16:34:55Z" finished-at="2016-07-06T16:36:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LiveRoomTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:36:18Z" finished-at="2016-07-06T16:36:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="NewsTest()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="NewsTest" duration-ms="15832" started-at="2016-07-06T16:36:18Z" finished-at="2016-07-06T16:36:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewsTest -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:36:18Z" finished-at="2016-07-06T16:36:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:36:33Z" finished-at="2016-07-06T16:36:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:36:33Z" finished-at="2016-07-06T16:36:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="FinanceTest()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="FinanceTest" duration-ms="15397" started-at="2016-07-06T16:36:33Z" finished-at="2016-07-06T16:36:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FinanceTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="tearDown" is-config="true" duration-ms="13359" started-at="2016-07-06T16:36:49Z" finished-at="2016-07-06T16:37:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:36:49Z" finished-at="2016-07-06T16:36:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="endTest(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.HomePageTest@3f49dace]" name="endTest" is-config="true" duration-ms="1767" started-at="2016-07-06T16:37:02Z" finished-at="2016-07-06T16:37:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@50dfbc58]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.jince.android.tests.HomePageTest -->
+    </test> <!-- HomePageTest -->
+    <test name="Mine_MinePageTest" duration-ms="253390" started-at="2016-07-06T08:37:04Z" finished-at="2016-07-06T08:41:17Z">
+      <class name="com.jince.android.tests.Mine_XinSchoolPageTest">
+        <test-method status="PASS" signature="suiteSetup()[pri:0, instance:com.jince.android.tests.Mine_XinSchoolPageTest@13805618]" name="suiteSetup" is-config="true" duration-ms="10" started-at="2016-07-06T16:27:13Z" finished-at="2016-07-06T16:27:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteSetup -->
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.Mine_XinSchoolPageTest@13805618]" name="setUpDriver" is-config="true" duration-ms="33515" started-at="2016-07-06T16:37:04Z" finished-at="2016-07-06T16:37:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4416d64f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jince.android.tests.Mine_XinSchoolPageTest@13805618]" name="setUp" is-config="true" duration-ms="3496" started-at="2016-07-06T16:39:05Z" finished-at="2016-07-06T16:39:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_XinSchoolPageTest@13805618]" name="beforeTestCase" is-config="true" duration-ms="650" started-at="2016-07-06T16:39:09Z" finished-at="2016-07-06T16:39:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="GaoLinkTest()[pri:0, instance:com.jince.android.tests.Mine_XinSchoolPageTest@13805618]" name="GaoLinkTest" duration-ms="7159" started-at="2016-07-06T16:39:09Z" finished-at="2016-07-06T16:39:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GaoLinkTest -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_XinSchoolPageTest@13805618]" name="beforeTestCase" is-config="true" duration-ms="733" started-at="2016-07-06T16:39:17Z" finished-at="2016-07-06T16:39:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_XinSchoolPageTest@13805618]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:39:17Z" finished-at="2016-07-06T16:39:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="XinLinkTest()[pri:0, instance:com.jince.android.tests.Mine_XinSchoolPageTest@13805618]" name="XinLinkTest" duration-ms="7057" started-at="2016-07-06T16:39:17Z" finished-at="2016-07-06T16:39:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- XinLinkTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jince.android.tests.Mine_XinSchoolPageTest@13805618]" name="tearDown" is-config="true" duration-ms="1" started-at="2016-07-06T16:39:24Z" finished-at="2016-07-06T16:39:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_XinSchoolPageTest@13805618]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:39:24Z" finished-at="2016-07-06T16:39:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="endTest(org.testng.ITestContext)[pri:0, instance:com.jince.android.tests.Mine_XinSchoolPageTest@13805618]" name="endTest" is-config="true" duration-ms="1853" started-at="2016-07-06T16:41:16Z" finished-at="2016-07-06T16:41:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4416d64f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="endSuite()[pri:0, instance:com.jince.android.tests.Mine_XinSchoolPageTest@13805618]" name="endSuite" is-config="true" duration-ms="0" started-at="2016-07-06T16:41:17Z" finished-at="2016-07-06T16:41:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSuite -->
-      </class> <!-- com.jince.android.tests.Mine_MineCenterPageTest -->
-    </test> <!-- Full Test - WWW -->
+      </class> <!-- com.jince.android.tests.Mine_XinSchoolPageTest -->
+      <class name="com.jince.android.tests.Mine_SjsIntroPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="setUp" is-config="true" duration-ms="3373" started-at="2016-07-06T16:38:09Z" finished-at="2016-07-06T16:38:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="beforeTestCase" is-config="true" duration-ms="763" started-at="2016-07-06T16:38:12Z" finished-at="2016-07-06T16:38:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="fengKongLinkTest()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="fengKongLinkTest" duration-ms="6804" started-at="2016-07-06T16:38:13Z" finished-at="2016-07-06T16:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fengKongLinkTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:38:19Z" finished-at="2016-07-06T16:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="beforeTestCase" is-config="true" duration-ms="654" started-at="2016-07-06T16:38:19Z" finished-at="2016-07-06T16:38:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="heYueLinkTest()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="heYueLinkTest" duration-ms="6855" started-at="2016-07-06T16:38:20Z" finished-at="2016-07-06T16:38:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- heYueLinkTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="afterTestCase" is-config="true" duration-ms="2" started-at="2016-07-06T16:38:27Z" finished-at="2016-07-06T16:38:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="beforeTestCase" is-config="true" duration-ms="722" started-at="2016-07-06T16:38:27Z" finished-at="2016-07-06T16:38:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="jiaoGeLinkTest()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="jiaoGeLinkTest" duration-ms="6909" started-at="2016-07-06T16:38:28Z" finished-at="2016-07-06T16:38:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jiaoGeLinkTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:38:35Z" finished-at="2016-07-06T16:38:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="beforeTestCase" is-config="true" duration-ms="656" started-at="2016-07-06T16:38:35Z" finished-at="2016-07-06T16:38:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="jiaoYiLinkTest()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="jiaoYiLinkTest" duration-ms="6885" started-at="2016-07-06T16:38:35Z" finished-at="2016-07-06T16:38:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jiaoYiLinkTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:38:42Z" finished-at="2016-07-06T16:38:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="beforeTestCase" is-config="true" duration-ms="678" started-at="2016-07-06T16:38:42Z" finished-at="2016-07-06T16:38:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="kaiHuLinkTest()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="kaiHuLinkTest" duration-ms="6880" started-at="2016-07-06T16:38:43Z" finished-at="2016-07-06T16:38:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kaiHuLinkTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:38:50Z" finished-at="2016-07-06T16:38:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="beforeTestCase" is-config="true" duration-ms="837" started-at="2016-07-06T16:38:50Z" finished-at="2016-07-06T16:38:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="qingSuanLinkTest()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="qingSuanLinkTest" duration-ms="6886" started-at="2016-07-06T16:38:51Z" finished-at="2016-07-06T16:38:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- qingSuanLinkTest -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="beforeTestCase" is-config="true" duration-ms="872" started-at="2016-07-06T16:38:57Z" finished-at="2016-07-06T16:38:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:38:57Z" finished-at="2016-07-06T16:38:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="reDianLinkTest()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="reDianLinkTest" duration-ms="6977" started-at="2016-07-06T16:38:58Z" finished-at="2016-07-06T16:39:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reDianLinkTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:39:05Z" finished-at="2016-07-06T16:39:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jince.android.tests.Mine_SjsIntroPageTest@4566e5bd]" name="tearDown" is-config="true" duration-ms="1" started-at="2016-07-06T16:39:05Z" finished-at="2016-07-06T16:39:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.jince.android.tests.Mine_SjsIntroPageTest -->
+      <class name="com.jince.android.tests.Mine_FeedbackPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="setUp" is-config="true" duration-ms="20594" started-at="2016-07-06T16:39:24Z" finished-at="2016-07-06T16:39:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="InterfaceTest()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="InterfaceTest" duration-ms="2508" started-at="2016-07-06T16:39:45Z" finished-at="2016-07-06T16:39:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InterfaceTest -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:39:45Z" finished-at="2016-07-06T16:39:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:39:48Z" finished-at="2016-07-06T16:39:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:39:48Z" finished-at="2016-07-06T16:39:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="SubmitFeedbackTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="SubmitFeedbackTest" duration-ms="18676" started-at="2016-07-06T16:39:48Z" data-provider="Feedback" finished-at="2016-07-06T16:40:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[150]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitFeedbackTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:40:06Z" finished-at="2016-07-06T16:40:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:40:06Z" finished-at="2016-07-06T16:40:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="SubmitFeedbackTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="SubmitFeedbackTest" duration-ms="18156" started-at="2016-07-06T16:40:06Z" data-provider="Feedback" finished-at="2016-07-06T16:40:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[150021526861]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitFeedbackTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:40:24Z" finished-at="2016-07-06T16:40:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="SubmitFeedbackTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="SubmitFeedbackTest" duration-ms="19378" started-at="2016-07-06T16:40:24Z" data-provider="Feedback" finished-at="2016-07-06T16:40:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15002152686]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[²âÊÔ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitFeedbackTest -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:40:24Z" finished-at="2016-07-06T16:40:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="SubmitFeedbackTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="SubmitFeedbackTest" duration-ms="14270" started-at="2016-07-06T16:40:44Z" data-provider="Feedback" finished-at="2016-07-06T16:40:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[right]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15002152686]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vod3eqerkj]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitFeedbackTest -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:40:44Z" finished-at="2016-07-06T16:40:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:40:44Z" finished-at="2016-07-06T16:40:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:40:58Z" finished-at="2016-07-06T16:40:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:40:58Z" finished-at="2016-07-06T16:40:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="FeedbackHistoryTest()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="FeedbackHistoryTest" duration-ms="5252" started-at="2016-07-06T16:40:58Z" finished-at="2016-07-06T16:41:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FeedbackHistoryTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="afterTestCase" is-config="true" duration-ms="1" started-at="2016-07-06T16:41:03Z" finished-at="2016-07-06T16:41:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:41:03Z" finished-at="2016-07-06T16:41:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="HotProblemTest()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="HotProblemTest" duration-ms="4232" started-at="2016-07-06T16:41:03Z" finished-at="2016-07-06T16:41:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HotProblemTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:41:07Z" finished-at="2016-07-06T16:41:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jince.android.tests.Mine_FeedbackPageTest@ff5b51f]" name="tearDown" is-config="true" duration-ms="8027" started-at="2016-07-06T16:41:07Z" finished-at="2016-07-06T16:41:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.jince.android.tests.Mine_FeedbackPageTest -->
+      <class name="com.jince.android.tests.MinePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jince.android.tests.MinePageTest@56ef9176]" name="setUp" is-config="true" duration-ms="14753" started-at="2016-07-06T16:37:37Z" finished-at="2016-07-06T16:37:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="InterfaceTest()[pri:0, instance:com.jince.android.tests.MinePageTest@56ef9176]" name="InterfaceTest" duration-ms="2407" started-at="2016-07-06T16:37:52Z" finished-at="2016-07-06T16:37:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InterfaceTest -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.MinePageTest@56ef9176]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:37:52Z" finished-at="2016-07-06T16:37:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.MinePageTest@56ef9176]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:37:55Z" finished-at="2016-07-06T16:37:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="beforeTestCase()[pri:0, instance:com.jince.android.tests.MinePageTest@56ef9176]" name="beforeTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:37:55Z" finished-at="2016-07-06T16:37:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCase -->
+        <test-method status="PASS" signature="PushSettingTest()[pri:0, instance:com.jince.android.tests.MinePageTest@56ef9176]" name="PushSettingTest" duration-ms="5906" started-at="2016-07-06T16:37:55Z" finished-at="2016-07-06T16:38:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PushSettingTest -->
+        <test-method status="PASS" signature="afterTestCase()[pri:0, instance:com.jince.android.tests.MinePageTest@56ef9176]" name="afterTestCase" is-config="true" duration-ms="0" started-at="2016-07-06T16:38:01Z" finished-at="2016-07-06T16:38:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestCase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jince.android.tests.MinePageTest@56ef9176]" name="tearDown" is-config="true" duration-ms="7986" started-at="2016-07-06T16:38:01Z" finished-at="2016-07-06T16:38:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.jince.android.tests.MinePageTest -->
+    </test> <!-- Mine_MinePageTest -->
   </suite> <!-- JinDaShi Android Test -->
 </testng-results>
