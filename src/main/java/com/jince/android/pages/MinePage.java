@@ -35,16 +35,16 @@ public class MinePage extends BasePage {
 	public WebElement shareBtn;
 	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/mine_aboutus")
 	public WebElement aboutBtn;
-	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/tv_home")
-	public WebElement homeBtn;
-	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/tv_hq")
-	public WebElement hangqingBtn;
-	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/tv_jy")
-	public WebElement jiaoyiBtn;
-	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/tv_customer")
-	public WebElement kefuBtn;
-	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/tv_wd")
-	public WebElement mineBtn;
+//	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/tv_home")
+//	public WebElement homeBtn;
+//	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/tv_hq")
+//	public WebElement hangqingBtn;
+//	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/tv_jy")
+//	public WebElement jiaoyiBtn;
+//	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/tv_customer")
+//	public WebElement kefuBtn;
+//	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/tv_wd")
+//	public WebElement mineBtn;
 	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/pushsettings_togglebutton")
 	private WebElement pushToggleBtn;
 	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/actionbar_back")
@@ -54,20 +54,6 @@ public class MinePage extends BasePage {
 	public MinePage(AndroidDriver<WebElement> driver) {
 		super(driver);
 		PageFactory.initElements(new AppiumFieldDecorator(driver, 15, TimeUnit.SECONDS), this);
-	}
-	
-	public boolean GoToMinePage() {
-		try {
-			mineBtn.click();
-			if(!title.isDisplayed()){
-				return false;
-			}
-			
-		} catch (NoSuchElementException ex) {
-			ConPrint.failMessage("No Such Element", ex);
-			return false;
-		}
-		return true;
 	}
 	
 	public boolean InterfaceCheck(String tx1,String tx2,String tx3,
@@ -100,14 +86,7 @@ public class MinePage extends BasePage {
 		}
 		return true;
 	}
-	public HomePage GoToHomePage(){
-		try {
-			homeBtn.click();
-		} catch (NoSuchElementException ex) {
-			ConPrint.failMessage("No Such Element", ex);
-		}
-		return new HomePage(driver);
-	}
+
 	public Mine_LoginPage GoToLoginPage(){
 		try {
 			nicknameBtn.click();
@@ -142,6 +121,7 @@ public class MinePage extends BasePage {
 		}
 		return new Mine_FeedbackPage(driver);
 	}
+
 	public boolean pushSetting() {
 		try {
 			pushSetBtn.click();

@@ -17,9 +17,9 @@ public class InitEnvPaths {
 		String nodePath = null;
 		String appiumPath = null;
 		String regEx1 = "^*nodejs*";
-		String regEx2 = "^*Appium*";
-		Pattern pattern1 = Pattern.compile(regEx1);
-		Pattern pattern2 = Pattern.compile(regEx2);
+		String regEx2 = "^*appium*";
+		Pattern pattern1 = Pattern.compile(regEx1,Pattern.CASE_INSENSITIVE);
+		Pattern pattern2 = Pattern.compile(regEx2,Pattern.CASE_INSENSITIVE);
 		for(int i=0;i<paths.length;i++){
 			Matcher matcher1 = pattern1.matcher(paths[i]);
 			Matcher matcher2 = pattern2.matcher(paths[i]);
@@ -31,6 +31,8 @@ public class InitEnvPaths {
 				appiumPath = appiumPath.replaceAll("\\\\", "\\\\\\\\");
 			}
 		}
+		System.out.println("Node Path is "+nodePath);
+		System.out.println("Appium Path is "+appiumPath);
 		if(nodePath==null||appiumPath==null){
 			ConPrint.warn("Can not find paths in ENV_PATHS,Please make sure that node and "
 					+ "appium was installed on your PC!");

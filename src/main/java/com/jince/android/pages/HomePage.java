@@ -126,7 +126,7 @@ public class HomePage extends BasePage{
 			JiaoYiPage jiaoYiPage = new JiaoYiPage(driver);
 			String quoteFirstTx = quoteFirst.getAttribute("text");
 			quoteFirst.click();
-			String hqTitleTx = hangQingPage.hqtitle.getAttribute("text");
+			String hqTitleTx = hangQingPage.hqTitle.getAttribute("text");
 			if (!hqTitleTx.contains(quoteFirstTx)) {
 				minePage.GoToHomePage();
 				return false;
@@ -134,7 +134,7 @@ public class HomePage extends BasePage{
 			hangQingPage.backBtn.click();
 			quoteMoreBtn.click();
 			hangQingPage.tip.click();
-			if (!hangQingPage.zixuan.isDisplayed()) {
+			if (!hangQingPage.title.isDisplayed()) {
 				minePage.GoToHomePage();
 				return false;
 			}
@@ -156,7 +156,7 @@ public class HomePage extends BasePage{
 			swipeTo.Down(0);
 			swipeTo.Down(0);
 			Thread.sleep(5000);
-			swipeTo.HqUp(0);
+//			swipeTo.HqUp(0);
 			String roomNameExp = roomItemTitles.get(0).getAttribute("text");
 			roomItemTitles.get(0).click();
 			String roomRst = roomTitle.getAttribute("text");
@@ -208,11 +208,15 @@ public class HomePage extends BasePage{
 			hdSendBtn.click();
 			driver.findElement(By.name("For Auto test"));
 			orderMenu.click();
-			String handanTx = buyType.get(0).getAttribute("text");
-			orderWeekBtn.click();
-			String handanTx2 = buyType.get(0).getAttribute("text");
-			if (!handanTx.equals(handanTx2)) {
-				return false;
+			if (!buyType.isEmpty()) {
+				String handanTx = buyType.get(0).getAttribute("text");
+				orderWeekBtn.click();
+				String handanTx2 = buyType.get(0).getAttribute("text");
+				if (!handanTx.equals(handanTx2)) {
+					return false;
+				}
+			}else {
+				orderWeekBtn.click();
 			}
 			orderTodayBtn.click();
 			noteMenu.click();

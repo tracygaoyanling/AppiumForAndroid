@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="JinDaShi Android Test" parallel="false"
 skipfailedinvocationcounts="true" configfailurepolicy="continue" preserve-order="true">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
 	<test name="Mine_LoginPageTest" preserve-order="true">
 		<classes>
 			<class name="com.jince.android.tests.Mine_LoginPageTest">

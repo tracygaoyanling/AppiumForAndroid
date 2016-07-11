@@ -45,15 +45,15 @@ public abstract class BaseTest {
 		ConPrint.testName(context.getCurrentXmlTest().getName());
 		init();
 		try{
-			if(UIConfig.EnvPaths==null){
+			if(UIConfig.EnvPaths.length<2){
+				ConPrint.info("Use Path Config in Properties...");
 				System.setProperty(AppiumServiceBuilder.NODE_PATH ,UIConfig.nodePath);
 				System.setProperty(AppiumServiceBuilder.APPIUM_PATH ,UIConfig.appiumPath);
 			}else{
+				ConPrint.info("Use Path found by code...");
 				System.setProperty(AppiumServiceBuilder.NODE_PATH ,UIConfig.EnvPaths[0]);
 				System.setProperty(AppiumServiceBuilder.APPIUM_PATH ,UIConfig.EnvPaths[1]);
 			}
-			System.setProperty(AppiumServiceBuilder.NODE_PATH ,UIConfig.nodePath);
-			System.setProperty(AppiumServiceBuilder.APPIUM_PATH ,UIConfig.appiumPath);
 			service = AppiumDriverLocalService.buildDefaultService();
 			service.start();
 	        if (service == null || !service.isRunning()) {

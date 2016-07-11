@@ -14,6 +14,7 @@ public class UIConfig {
 		EnvPaths = InitEnvPaths.FindEnvPaths();
 	}
 	public static boolean needInstall;
+	public static String ENV;
 	public static String account;
 	public static String password;
 	public static String[] EnvPaths;
