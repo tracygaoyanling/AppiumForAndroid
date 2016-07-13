@@ -1,6 +1,5 @@
 package com.jince.android.pages;
 
-import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -10,7 +9,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
+import com.jince.android.control.SwipeTo;
 import com.jince.android.utility.ConPrint;
+import com.jince.android.utility.ContrlWait;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -26,7 +27,7 @@ public class HangQingPage extends BasePage{
 	private WebElement searchBtn;
 	@AndroidFindBy(id = "com.jincehuangjin.jindashi:id/tv_title")
 	public WebElement title;
-	@AndroidFindBy(xpath ="//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.LinearLayout")
+	@AndroidFindBy(xpath ="//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView")
 	private List<WebElement> hgTabLists;
 	@AndroidFindBy(name = "全部")
 	private WebElement all;
@@ -70,24 +71,47 @@ public class HangQingPage extends BasePage{
 				String hgTabTx = hgTab.getAttribute("text");
 				hgTab.click();
 				if (!hgTabTx.equals("特色数据")) {
+					ConPrint.info("Current Tab is "+hgTabTx);
 					String hgTx = hgLists.get(0).findElement(By.id("com.jincehuangjin.jindashi:id/tv_title")).getAttribute("text");
 					hgLists.get(0).click();
 					String hgExpTx = hqTitle.getAttribute("text");
+					ConPrint.info("Current opened Page is "+hgExpTx);
 					if (!hgExpTx.contains(hgTx)) {
 						backBtn.click();
 						return false;
 					}
 					backBtn.click();
 				}else{
+					ConPrint.info("Current Tab is "+hgTabTx);
 					String hgTx = sDataLists.get(0).findElement(By.id("com.jincehuangjin.jindashi:id/tv_title")).getAttribute("text");
 					sDataLists.get(0).click();
 					String hgExpTx = sDateTitle.getAttribute("text");
-					if (!hgExpTx.equals(hgTx)) {
-						webBackBtn.click();
+					ConPrint.info("Current opened Page is "+hgExpTx);
+					webBackBtn.click();
+					return hgExpTx.equals(hgTx);
+				}
+			}
+		} catch (NoSuchElementException ex) {
+			ConPrint.failMessage("No Such Element", ex);
+			return false;
+		}
+		return true;
+	}
+	
+	public boolean SwipeHqTab() {
+		try {
+			SwipeTo swipeTo = new SwipeTo(driver);
+			hgTabLists.get(0).click();
+			for (WebElement hgTab : hgTabLists) {
+				String hgTabTx = hgTab.getAttribute("text");
+					ConPrint.info("Current Tab is "+hgTabTx);
+					String hgExpTx = title.getAttribute("text");
+					ConPrint.info("Current Title is "+hgExpTx);
+					if (!hgExpTx.equals(hgTabTx)) {
 						return false;
 					}
-					webBackBtn.click();
-				}
+					swipeTo.Left(0);
+					ContrlWait.sleep((long) 3000);
 			}
 		} catch (NoSuchElementException ex) {
 			ConPrint.failMessage("No Such Element", ex);

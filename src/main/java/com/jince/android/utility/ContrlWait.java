@@ -58,7 +58,7 @@ public class ContrlWait {
 	 * @param second : a number.how long the search will over time
 	 * @return boolean
 	 * **/
-	public static  boolean wait(Object element,AndroidDriver<WebElement> driver)
+	public static  boolean wait(WebElement element,AndroidDriver<WebElement> driver)
 	{
 		final WebElement e = (WebElement)element;
 		AndroidDriverWait wait = new AndroidDriverWait(driver,30); 

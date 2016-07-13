@@ -10,7 +10,8 @@
 			<class name="com.jince.android.tests.HangQingPageTest">
 				<methods>
 					<include name="InterfaceTest"/>
-					<include name="SwitchHqTabTest"/>
+<!-- 					<include name="SwitchHqTabTest"/>
+ -->					<include name="SwipeHqTabTest"/>
 				</methods >
 			</class>
 		</classes>

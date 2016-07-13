@@ -43,4 +43,9 @@ public class HangQingPageTest extends BaseTest{
 		boolean result = hangQingPage.SwitchHqTab();
 		Assert.assertTrue(result);
 	}
+	@Test
+	public void SwipeHqTabTest(){
+		boolean result = hangQingPage.SwipeHqTab();
+		Assert.assertTrue(result);
+	}
 }

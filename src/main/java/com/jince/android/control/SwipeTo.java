@@ -54,7 +54,7 @@ public class SwipeTo {
 	
 	public void Left(int during){
 		try{
-			driver.swipe(windth*3/4, height/2, windth/4, height/2, during);
+			driver.swipe(windth*9/10, height/2, windth/10, height/2, during);
 		}catch(Exception e){
 			System.out.println("Exception"+e);
 		}	

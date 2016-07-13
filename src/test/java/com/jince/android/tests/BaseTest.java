@@ -1,5 +1,6 @@
 package com.jince.android.tests;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebElement;
@@ -54,7 +55,7 @@ public abstract class BaseTest {
 				System.setProperty(AppiumServiceBuilder.NODE_PATH ,UIConfig.EnvPaths[0]);
 				System.setProperty(AppiumServiceBuilder.APPIUM_PATH ,UIConfig.EnvPaths[1]);
 			}
-			service = AppiumDriverLocalService.buildDefaultService();
+			service = new AppiumServiceBuilder().usingAnyFreePort().withArgument(GeneralServerFlag.LOG_LEVEL, "error").build();
 			service.start();
 	        if (service == null || !service.isRunning()) {
 	            throw new RuntimeException("An appium server node is not started!");

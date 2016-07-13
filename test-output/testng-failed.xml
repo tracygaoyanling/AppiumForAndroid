@@ -5,18 +5,21 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="Mine_LoginPageTest(failed)">
+  <test name="HangQingPageTest(failed)">
     <classes>
-      <class name="com.jince.android.tests.Mine_LoginPageTest">
+      <class name="com.jince.android.tests.HangQingPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="afterTestCase"/>
           <include name="suiteSetup"/>
-          <include name="ExitLoginPageTest"/>
+          <include name="endTest"/>
+          <include name="SwipeHqTabTest"/>
+          <include name="tearDown"/>
+          <include name="endSuite"/>
           <include name="setUpDriver"/>
-          <include name="LoginTest"/>
-          <include name="InterfaceTest"/>
+          <include name="beforeTestCase"/>
         </methods>
-      </class> <!-- com.jince.android.tests.Mine_LoginPageTest -->
+      </class> <!-- com.jince.android.tests.HangQingPageTest -->
     </classes>
-  </test> <!-- Mine_LoginPageTest(failed) -->
+  </test> <!-- HangQingPageTest(failed) -->
 </suite> <!-- Failed suite [JinDaShi Android Test] -->
